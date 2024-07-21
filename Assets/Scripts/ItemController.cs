@@ -22,13 +22,15 @@ public class ItemController : MonoBehaviour {
     }
 
     void OnMouseDown() {
-        if (GameManager.Instance._isSelectingItems) {
+        if (GameManager.Instance.isSelectingItems) {
             ToggleSelection(!_isSelected);
         }
     }
 
     public void ToggleSelection(bool isSelected) {
-        _isSelected = isSelected;
-        GameManager.Instance.ToggleSelectedItem(itemSO, isSelected);
+        if (_isSelected != isSelected) {
+            _isSelected = isSelected;
+            GameManager.Instance.ToggleSelectedItem(itemSO, isSelected);
+        }
     }
 }

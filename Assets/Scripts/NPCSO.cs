@@ -8,4 +8,5 @@ public class NPCSO : ScriptableObject {
     public string acceptDialogue;
 
     public ItemSO[] items;
+    public int moneyOffer;
 }

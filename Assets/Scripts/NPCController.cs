@@ -14,6 +14,8 @@ public class NPCController : MonoBehaviour {
 
     private NPCSO npcSO;
 
+    private int itemCount = 0;
+
     public void InitializeNPC(NPCSO newNPCSO) {
         npcSO = newNPCSO;
 
@@ -49,14 +51,14 @@ public class NPCController : MonoBehaviour {
     }
 
     public void AcceptOffer() {
-        GameManager.Instance.ToggleAllSelectableItems(true);
+        GameManager.Instance.isSelectingItems = true;
 
         speechText.text = npcSO.acceptDialogue;
         ToggleChoice(false);
     }
 
     public void DeclineOffer() {
-
+        DespawnNPC();
     }
 
     public void ToggleSelectedItem(ItemSO item, bool isSelected) {
@@ -64,11 +66,31 @@ public class NPCController : MonoBehaviour {
             if (item == npcSO.items[i]) {
                 if (isSelected) {
                     notepadTexts[i].text = "<color=red>O</color> " + npcSO.items[i].itemName;
+
+                    itemCount++;
+                    if (itemCount == npcSO.items.Length) {
+                        GameManager.Instance.AddMoney(npcSO.moneyOffer);
+                        DespawnNPC();
+                    }
                 } else {
                     notepadTexts[i].text = "O " + npcSO.items[i].itemName;
+
+                    itemCount--;
                 }
                 break;
             }
         }
+    }
+
+    private void DespawnNPC() {
+        GameManager.Instance.isSelectingItems = false;
+
+        npcSprite.enabled = false;
+        speechCanvas.enabled = false;
+        speechSprite.enabled = false;
+        notepadCanvas.enabled = false;
+        choiceCanvas.enabled = false;
+
+        GameManager.Instance.SpawnNPC();
     }
 }
