@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa8c1f1a34e9fb40a77ee2369ddb2bc, type: 3}
+  m_Name: DefaultNPC
+  m_EditorClassIdentifier: 
+  npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  engageDialogue: I haven't slept in days. My boyfriend makes too much noise. Do
+    you have a potion capable of knocking out cold just about anything alive?
+  acceptDialogue: I'm so glad you accepted. I feel conflicted about drugging him,
+    but it's easier than telling him his snoring make me want to end things...
+  items:
+  - {fileID: 11400000, guid: 43517ebddb260ed4988c4bf4c419a452, type: 2}
+  - {fileID: 11400000, guid: ed8974620b31b094ab672d891fc9fe17, type: 2}
+  - {fileID: 11400000, guid: decaf53c63d80ff4a8d096786a3cb539, type: 2}
