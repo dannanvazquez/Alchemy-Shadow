@@ -33,9 +33,9 @@ public class NPCController : MonoBehaviour {
         }
         notepadCanvas.enabled = true;
 
-        UnityEvent enableChoiceUIEvent = new();
-        enableChoiceUIEvent.AddListener(EnableChoiceUI);
-        clickAnywhereController.AwaitInput(enableChoiceUIEvent);
+        UnityEvent tempEvent = new();
+        tempEvent.AddListener(EnableChoiceUI);
+        clickAnywhereController.AwaitInput(tempEvent);
     }
 
     private void EnableChoiceUI() {

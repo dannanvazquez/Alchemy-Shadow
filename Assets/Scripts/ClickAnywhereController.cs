@@ -19,6 +19,9 @@ public class ClickAnywhereController : MonoBehaviour {
     }
 
     private IEnumerator AwaitInputCoroutine(UnityEvent unityEvent) {
+        // Prevent accidental clicks
+        yield return new WaitForSeconds(0.25f);
+
         bool isCanvasEnabled = false;
         float startTime = Time.time;
 
