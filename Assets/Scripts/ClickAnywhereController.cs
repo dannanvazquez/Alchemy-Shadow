@@ -14,11 +14,7 @@ public class ClickAnywhereController : MonoBehaviour {
         canvas = GetComponent<Canvas>();
     }
 
-    public void AwaitInput(UnityEvent unityEvent) {
-        StartCoroutine(AwaitInputCoroutine(unityEvent));
-    }
-
-    private IEnumerator AwaitInputCoroutine(UnityEvent unityEvent) {
+    public IEnumerator AwaitInputCoroutine() {
         // Prevent accidental clicks
         yield return new WaitForSeconds(0.25f);
 
@@ -36,6 +32,5 @@ public class ClickAnywhereController : MonoBehaviour {
         }
 
         canvas.enabled = false;
-        unityEvent?.Invoke();
     }
 }

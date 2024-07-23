@@ -1,41 +1,45 @@
 ﻿using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class NPCController : MonoBehaviour {
     [Header("References")]
     [SerializeField] private SpriteRenderer npcSprite;
+
     [SerializeField] private SpriteRenderer speechSprite;
     [SerializeField] private Canvas speechCanvas;
     [SerializeField] private TMP_Text speechText;
+
     [SerializeField] private Canvas choiceCanvas;
+    [SerializeField] private GameObject choiceButtonPrefab;
+
     [SerializeField] private Canvas notepadCanvas;
-    [SerializeField] private ClickAnywhereController clickAnywhereController;
     [SerializeField] private TMP_Text[] notepadTexts;
 
+    [SerializeField] private ClickAnywhereController clickAnywhereController;
+
     private NPCSO npcSO;
+    private Dialogue currentDialogue;
 
     private int itemCount = 0;
 
     public void InitializeNPC(NPCSO newNPCSO) {
         npcSO = newNPCSO;
+        currentDialogue = newNPCSO.dialogue;
 
         npcSprite.sprite = newNPCSO.npcSprite;
         npcSprite.enabled = true;
 
-        speechText.text = newNPCSO.engageDialogue;
-        speechCanvas.enabled = true;
-        speechSprite.enabled = true;
+        StartCoroutine(InitializeDialogueCoroutine());
 
+        // Enable the notepad
         for (int i = 0; i < npcSO.items.Length; i++) {
             notepadTexts[i].text = npcSO.items[i].itemName;
         }
         notepadCanvas.enabled = true;
-
-        UnityEvent tempEvent = new();
-        tempEvent.AddListener(EnableChoiceUI);
-        clickAnywhereController.AwaitInput(tempEvent);
     }
 
     private void EnableChoiceUI() {
@@ -45,22 +49,11 @@ public class NPCController : MonoBehaviour {
         choiceCanvas.enabled = true;
     }
 
-    private void DisableChoiceUI() {
+    private void EnableSpeechUI() {
         speechCanvas.enabled = true;
         speechSprite.enabled = true;
 
         choiceCanvas.enabled = false;
-    }
-
-    public void AcceptOffer() {
-        GameManager.Instance.isSelectingItems = true;
-
-        speechText.text = npcSO.acceptDialogue;
-        DisableChoiceUI();
-    }
-
-    public void DeclineOffer() {
-        DespawnNPC();
     }
 
     public void ToggleSelectedItem(ItemSO item, bool isSelected) {
@@ -72,7 +65,11 @@ public class NPCController : MonoBehaviour {
                     itemCount++;
                     if (itemCount == npcSO.items.Length) {
                         GameManager.Instance.AddMoney(npcSO.moneyOffer);
-                        DespawnNPC();
+
+                        GameManager.Instance.isSelectingItems = false;
+                        GameManager.Instance.DisableAllItemSelections();
+
+                        SelectNextDialogue();
                     }
                 } else {
                     notepadTexts[i].text = npcSO.items[i].itemName;
@@ -94,5 +91,55 @@ public class NPCController : MonoBehaviour {
         choiceCanvas.enabled = false;
 
         GameManager.Instance.SpawnNPC();
+    }
+
+    public IEnumerator InitializeDialogueCoroutine() {
+        // Initial dialogue text
+        speechText.text = currentDialogue.GetDialogueText();
+        EnableSpeechUI();
+
+        // Check if this is a dialogue that you craft at.
+        if (currentDialogue.DoesInitiateCrafting()) {
+            GameManager.Instance.isSelectingItems = true;
+            yield break;
+        }
+
+        // Wait for input to continue
+        yield return clickAnywhereController.AwaitInputCoroutine();
+
+        // Get the next dialogue
+        if (currentDialogue.HasManyPaths()) {
+            while (choiceCanvas.transform.childCount > 0) {
+                Destroy(choiceCanvas.transform.GetChild(0).gameObject);
+                yield return null;
+            }
+
+            string[] inputs = currentDialogue.GetNextInputs();
+
+            foreach (string input in inputs) {
+                GameObject choiceButtonGO = Instantiate(choiceButtonPrefab, choiceCanvas.transform);
+                Button choiceButton = choiceButtonGO.GetComponent<Button>();
+                TMP_Text choiceText = choiceButtonGO.GetComponentInChildren<TMP_Text>();
+
+                choiceButton.onClick.RemoveAllListeners();
+                choiceButton.onClick.AddListener(delegate { SelectNextDialogue(input); });
+
+                choiceText.text = input;
+            }
+
+            EnableChoiceUI();
+        } else {
+            SelectNextDialogue();
+        }
+    }
+
+    public void SelectNextDialogue(string choice = "") {
+        currentDialogue = currentDialogue.GetNextDialogue(choice);
+
+        if (currentDialogue != null) {
+            StartCoroutine(InitializeDialogueCoroutine());
+        } else {
+            DespawnNPC();
+        }
     }
 }

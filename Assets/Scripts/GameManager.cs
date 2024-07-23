@@ -40,30 +40,25 @@ public class GameManager : MonoBehaviour {
         npcSOs = Resources.LoadAll<NPCSO>("ScriptableObjects/NPCs/");
         items = itemContainer.GetComponentsInChildren<ItemController>();
 
-        NewDay();
+        StartCoroutine(NewDayCoroutine());
     }
 
-    private void NewDay() {
+    private IEnumerator NewDayCoroutine() {
         day++;
         todaysNpcAmount = 0;
 
         dayText.text = "Day " + day;
         dayCanvas.enabled = true;
 
-        UnityEvent tempEvent = new();
-        tempEvent.AddListener(StartDay);
-        clickAnywhereController.AwaitInput(tempEvent);
-    }
+        yield return clickAnywhereController.AwaitInputCoroutine();
 
-    public void StartDay() {
         dayCanvas.enabled = false;
         SpawnNPC();
     }
 
     public void SpawnNPC() {
-        Debug.Log("test: " + todaysNpcAmount);
         if (todaysNpcAmount >= npcAmountPerDay) {
-            NewDay();
+            StartCoroutine(NewDayCoroutine());
         } else {
             todaysNpcAmount++;
             StartCoroutine(SpawnNPCCoroutine());
@@ -73,12 +68,14 @@ public class GameManager : MonoBehaviour {
     private IEnumerator SpawnNPCCoroutine() {
         yield return new WaitForSeconds(2f);
 
+        NPCSO npcSO = npcSOs[Random.Range(0, npcSOs.Length)];
+        npcController.InitializeNPC(npcSO);
+    }
+
+    public void DisableAllItemSelections() {
         foreach (ItemController item in items) {
             item.ToggleSelection(false);
         }
-
-        NPCSO npcSO = npcSOs[Random.Range(0, npcSOs.Length)];
-        npcController.InitializeNPC(npcSO);
     }
 
     public void ToggleSelectedItem(ItemSO item, bool isSelected) {
