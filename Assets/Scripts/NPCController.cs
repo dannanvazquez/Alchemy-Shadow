@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPCController : MonoBehaviour {
     [Header("References")]
@@ -10,6 +11,7 @@ public class NPCController : MonoBehaviour {
     [SerializeField] private TMP_Text speechText;
     [SerializeField] private Canvas choiceCanvas;
     [SerializeField] private Canvas notepadCanvas;
+    [SerializeField] private ClickAnywhereController clickAnywhereController;
     [SerializeField] private TMP_Text[] notepadTexts;
 
     private NPCSO npcSO;
@@ -27,34 +29,34 @@ public class NPCController : MonoBehaviour {
         speechSprite.enabled = true;
 
         for (int i = 0; i < npcSO.items.Length; i++) {
-            notepadTexts[i].text = "O " + npcSO.items[i].itemName;
+            notepadTexts[i].text = npcSO.items[i].itemName;
         }
         notepadCanvas.enabled = true;
 
-        StartCoroutine(WaitForInitialInputCoroutine());
+        UnityEvent enableChoiceUIEvent = new();
+        enableChoiceUIEvent.AddListener(EnableChoiceUI);
+        clickAnywhereController.AwaitInput(enableChoiceUIEvent);
     }
 
-    private IEnumerator WaitForInitialInputCoroutine() {
-        // Wait until the input is true before continuing.
-        while (!Input.GetKeyDown(KeyCode.Mouse0)) {
-            yield return null;
-        }
+    private void EnableChoiceUI() {
+        speechCanvas.enabled = false;
+        speechSprite.enabled = false;
 
-        ToggleChoice(true);
+        choiceCanvas.enabled = true;
     }
 
-    private void ToggleChoice(bool isChoosing) {
-        speechCanvas.enabled = !isChoosing;
-        speechSprite.enabled = !isChoosing;
+    private void DisableChoiceUI() {
+        speechCanvas.enabled = true;
+        speechSprite.enabled = true;
 
-        choiceCanvas.enabled = isChoosing;
+        choiceCanvas.enabled = false;
     }
 
     public void AcceptOffer() {
         GameManager.Instance.isSelectingItems = true;
 
         speechText.text = npcSO.acceptDialogue;
-        ToggleChoice(false);
+        DisableChoiceUI();
     }
 
     public void DeclineOffer() {
@@ -65,7 +67,7 @@ public class NPCController : MonoBehaviour {
         for (int i = 0; i < npcSO.items.Length; i++) {
             if (item == npcSO.items[i]) {
                 if (isSelected) {
-                    notepadTexts[i].text = "<color=red>O</color> " + npcSO.items[i].itemName;
+                    notepadTexts[i].text = $"<s>{npcSO.items[i].itemName}</s>";
 
                     itemCount++;
                     if (itemCount == npcSO.items.Length) {
@@ -73,7 +75,7 @@ public class NPCController : MonoBehaviour {
                         DespawnNPC();
                     }
                 } else {
-                    notepadTexts[i].text = "O " + npcSO.items[i].itemName;
+                    notepadTexts[i].text = npcSO.items[i].itemName;
 
                     itemCount--;
                 }
