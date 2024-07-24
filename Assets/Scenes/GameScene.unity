@@ -953,11 +953,6 @@ MonoBehaviour:
   speechText: {fileID: 1278807917}
   choiceCanvas: {fileID: 824922912}
   choiceButtonPrefab: {fileID: 6587968185795647203, guid: 23fa9935fa8b1c240a382438ef0408f5, type: 3}
-  notepadCanvas: {fileID: 405104924}
-  notepadTexts:
-  - {fileID: 1737882769}
-  - {fileID: 634093545}
-  - {fileID: 139946336}
   clickAnywhereController: {fileID: 422283421}
 --- !u!1 &505992118
 GameObject:
@@ -1887,6 +1882,11 @@ MonoBehaviour:
   clickAnywhereController: {fileID: 422283421}
   dayCanvas: {fileID: 855978032}
   dayText: {fileID: 2122525276}
+  notepadCanvas: {fileID: 405104924}
+  notepadTexts:
+  - {fileID: 1737882769}
+  - {fileID: 634093545}
+  - {fileID: 139946336}
   npcAmountPerDay: 5
   isSelectingItems: 0
 --- !u!1 &933376608

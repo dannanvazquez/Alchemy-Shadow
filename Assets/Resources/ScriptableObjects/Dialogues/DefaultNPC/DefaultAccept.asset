@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
   m_Name: DefaultAccept
   m_EditorClassIdentifier: 
-  _dialogueText: Craft this
+  _dialogueText: I'm so glad you accepted. I feel conflicted about drugging him,
+    but it's easier than telling him his snoring makes me want to end things...
   _inputText: Accept
   _initiatesCrafting: 1
   _dialogues:

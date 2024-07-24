@@ -6,11 +6,18 @@ using UnityEngine.Events;
 public class GameManager : MonoBehaviour {
     [Header("References")]
     [SerializeField] private NPCController npcController;
+
     [SerializeField] private Transform itemContainer;
+
     [SerializeField] private TMP_Text moneyText;
+
     [SerializeField] private ClickAnywhereController clickAnywhereController;
+
     [SerializeField] private Canvas dayCanvas;
     [SerializeField] private TMP_Text dayText;
+
+    [SerializeField] private Canvas notepadCanvas;
+    [SerializeField] private TMP_Text[] notepadTexts;
 
     private NPCSO[] npcSOs;
     private ItemController[] items;
@@ -24,6 +31,7 @@ public class GameManager : MonoBehaviour {
     private int money = 0;
     private int day = 0;
     private int todaysNpcAmount = 0;
+    private int itemCount = 0;
 
     public static GameManager Instance { get; private set; }
 
@@ -79,7 +87,40 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ToggleSelectedItem(ItemSO item, bool isSelected) {
-        npcController.ToggleSelectedItem(item, isSelected);
+        for (int i = 0; i < npcController.npcSO.items.Length; i++) {
+            if (item == npcController.npcSO.items[i]) {
+                if (isSelected) {
+                    notepadTexts[i].text = $"<s>{npcController.npcSO.items[i].itemName}</s>";
+
+                    itemCount++;
+                    if (itemCount == npcController.npcSO.items.Length) {
+                        notepadCanvas.enabled = false;
+
+                        AddMoney(npcController.npcSO.moneyOffer);
+
+                        isSelectingItems = false;
+                        DisableAllItemSelections();
+
+                        npcController.SelectNextDialogue();
+                    }
+                } else {
+                    notepadTexts[i].text = npcController.npcSO.items[i].itemName;
+
+                    itemCount--;
+                }
+                break;
+            }
+        }
+    }
+
+    public void EnableCrafting() {
+        for (int i = 0; i < npcController.npcSO.items.Length; i++) {
+            notepadTexts[i].text = npcController.npcSO.items[i].itemName;
+        }
+        notepadCanvas.enabled = true;
+
+
+        isSelectingItems = true;
     }
 
     public void AddMoney(int addedMoney) {

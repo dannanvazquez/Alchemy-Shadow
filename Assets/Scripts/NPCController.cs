@@ -16,15 +16,10 @@ public class NPCController : MonoBehaviour {
     [SerializeField] private Canvas choiceCanvas;
     [SerializeField] private GameObject choiceButtonPrefab;
 
-    [SerializeField] private Canvas notepadCanvas;
-    [SerializeField] private TMP_Text[] notepadTexts;
-
     [SerializeField] private ClickAnywhereController clickAnywhereController;
 
-    private NPCSO npcSO;
-    private DialogueSO currentDialogueSO;
-
-    private int itemCount = 0;
+    public NPCSO npcSO { get; private set; }
+    public DialogueSO currentDialogueSO { get; private set; }
 
     public void InitializeNPC(NPCSO newNPCSO) {
         npcSO = newNPCSO;
@@ -34,12 +29,6 @@ public class NPCController : MonoBehaviour {
         npcSprite.enabled = true;
 
         StartCoroutine(InitializeDialogueCoroutine());
-
-        // Enable the notepad
-        for (int i = 0; i < npcSO.items.Length; i++) {
-            notepadTexts[i].text = npcSO.items[i].itemName;
-        }
-        notepadCanvas.enabled = true;
     }
 
     private void EnableChoiceUI() {
@@ -56,38 +45,12 @@ public class NPCController : MonoBehaviour {
         choiceCanvas.enabled = false;
     }
 
-    public void ToggleSelectedItem(ItemSO item, bool isSelected) {
-        for (int i = 0; i < npcSO.items.Length; i++) {
-            if (item == npcSO.items[i]) {
-                if (isSelected) {
-                    notepadTexts[i].text = $"<s>{npcSO.items[i].itemName}</s>";
-
-                    itemCount++;
-                    if (itemCount == npcSO.items.Length) {
-                        GameManager.Instance.AddMoney(npcSO.moneyOffer);
-
-                        GameManager.Instance.isSelectingItems = false;
-                        GameManager.Instance.DisableAllItemSelections();
-
-                        SelectNextDialogue();
-                    }
-                } else {
-                    notepadTexts[i].text = npcSO.items[i].itemName;
-
-                    itemCount--;
-                }
-                break;
-            }
-        }
-    }
-
     private void DespawnNPC() {
         GameManager.Instance.isSelectingItems = false;
 
         npcSprite.enabled = false;
         speechCanvas.enabled = false;
         speechSprite.enabled = false;
-        notepadCanvas.enabled = false;
         choiceCanvas.enabled = false;
 
         GameManager.Instance.SpawnNPC();
@@ -100,7 +63,7 @@ public class NPCController : MonoBehaviour {
 
         // Check if this is a dialogue that you craft at.
         if (currentDialogueSO.DoesInitiateCrafting()) {
-            GameManager.Instance.isSelectingItems = true;
+            GameManager.Instance.EnableCrafting();
             yield break;
         }
 

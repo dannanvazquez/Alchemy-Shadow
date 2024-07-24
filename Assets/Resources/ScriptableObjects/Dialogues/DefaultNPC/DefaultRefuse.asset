@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
   m_Name: DefaultRefuse
   m_EditorClassIdentifier: 
-  _dialogueText: Ok bye then
+  _dialogueText: Okay, I guess. Bye then...
   _inputText: Refuse
   _initiatesCrafting: 0
   _dialogues: []

@@ -13,25 +13,7 @@ MonoBehaviour:
   m_Name: DefaultNPC
   m_EditorClassIdentifier: 
   npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
-  dialogue:
-    _dialogueText: I haven't slept in days. My boyfriend makes too much noise. Do
-      you have a potion capable of knocking out cold just about anything alive?
-    _inputText: 
-    _initiatesCrafting: 0
-    _dialogues:
-    - _dialogueText: I'm so glad you accepted. I feel conflicted about drugging him,
-        but it's easier than telling him his snoring makes me want to end things...
-      _inputText: Accept
-      _initiatesCrafting: 1
-      _dialogues:
-      - _dialogueText: Thank you!
-        _inputText: 
-        _initiatesCrafting: 0
-        _dialogues: []
-    - _dialogueText: Alright, fine. Goodbye then!
-      _inputText: Refuse
-      _initiatesCrafting: 0
-      _dialogues: []
+  dialogue: {fileID: 11400000, guid: 1e2b7c45dba3d1d47b698cd6d5e5a9dc, type: 2}
   items:
   - {fileID: 11400000, guid: 43517ebddb260ed4988c4bf4c419a452, type: 2}
   - {fileID: 11400000, guid: ed8974620b31b094ab672d891fc9fe17, type: 2}
