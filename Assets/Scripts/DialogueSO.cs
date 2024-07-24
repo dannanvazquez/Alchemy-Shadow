@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
-[Serializable]
-public class Dialogue {
+[CreateAssetMenu(fileName = "Dialogue", menuName = "ScriptableObjects/Dialogue")]
+public class DialogueSO : ScriptableObject {
     [SerializeField] private string _dialogueText;
     [SerializeField] private string _inputText;
     [SerializeField] private bool _initiatesCrafting;
-    [SerializeField] private Dialogue[] _dialogues;
+    [SerializeField] private DialogueSO[] _dialogues;
 
     public string GetDialogueText() { return _dialogueText; }
 
@@ -28,9 +25,9 @@ public class Dialogue {
         return key;
     }
 
-    public Dialogue GetNextDialogue(string input) {
+    public DialogueSO GetNextDialogue(string input) {
         if (_dialogues.Length > 1) {
-            foreach (Dialogue dialogue in _dialogues) {
+            foreach (DialogueSO dialogue in _dialogues) {
                 if (dialogue.GetInputText() == input) return dialogue;
             }
         } else if (_dialogues.Length == 1) {

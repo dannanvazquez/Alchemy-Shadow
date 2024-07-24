@@ -22,13 +22,13 @@ public class NPCController : MonoBehaviour {
     [SerializeField] private ClickAnywhereController clickAnywhereController;
 
     private NPCSO npcSO;
-    private Dialogue currentDialogue;
+    private DialogueSO currentDialogueSO;
 
     private int itemCount = 0;
 
     public void InitializeNPC(NPCSO newNPCSO) {
         npcSO = newNPCSO;
-        currentDialogue = newNPCSO.dialogue;
+        currentDialogueSO = newNPCSO.dialogue;
 
         npcSprite.sprite = newNPCSO.npcSprite;
         npcSprite.enabled = true;
@@ -95,11 +95,11 @@ public class NPCController : MonoBehaviour {
 
     public IEnumerator InitializeDialogueCoroutine() {
         // Initial dialogue text
-        speechText.text = currentDialogue.GetDialogueText();
+        speechText.text = currentDialogueSO.GetDialogueText();
         EnableSpeechUI();
 
         // Check if this is a dialogue that you craft at.
-        if (currentDialogue.DoesInitiateCrafting()) {
+        if (currentDialogueSO.DoesInitiateCrafting()) {
             GameManager.Instance.isSelectingItems = true;
             yield break;
         }
@@ -108,13 +108,13 @@ public class NPCController : MonoBehaviour {
         yield return clickAnywhereController.AwaitInputCoroutine();
 
         // Get the next dialogue
-        if (currentDialogue.HasManyPaths()) {
+        if (currentDialogueSO.HasManyPaths()) {
             while (choiceCanvas.transform.childCount > 0) {
                 Destroy(choiceCanvas.transform.GetChild(0).gameObject);
                 yield return null;
             }
 
-            string[] inputs = currentDialogue.GetNextInputs();
+            string[] inputs = currentDialogueSO.GetNextInputs();
 
             foreach (string input in inputs) {
                 GameObject choiceButtonGO = Instantiate(choiceButtonPrefab, choiceCanvas.transform);
@@ -134,9 +134,9 @@ public class NPCController : MonoBehaviour {
     }
 
     public void SelectNextDialogue(string choice = "") {
-        currentDialogue = currentDialogue.GetNextDialogue(choice);
+        currentDialogueSO = currentDialogueSO.GetNextDialogue(choice);
 
-        if (currentDialogue != null) {
+        if (currentDialogueSO != null) {
             StartCoroutine(InitializeDialogueCoroutine());
         } else {
             DespawnNPC();

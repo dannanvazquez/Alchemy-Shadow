@@ -4,7 +4,7 @@ using UnityEngine;
 public class NPCSO : ScriptableObject {
     public Sprite npcSprite;
 
-    public Dialogue dialogue;
+    public DialogueSO dialogue;
 
     public ItemSO[] items;
     public int moneyOffer;
