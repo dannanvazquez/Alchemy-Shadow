@@ -18,3 +18,4 @@ MonoBehaviour:
   _initiatesCrafting: 1
   _dialogues:
   - {fileID: 11400000, guid: 3ae90d64b274a264c813c9c05290025b, type: 2}
+  - {fileID: 11400000, guid: 88d6b2f184741e244ac7ade48eb7798e, type: 2}

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private TMP_Text moneyText;
 
+    [SerializeField] private TimerController timerController;
     [SerializeField] private ClickAnywhereController clickAnywhereController;
 
     [SerializeField] private Canvas dayCanvas;
@@ -94,6 +95,7 @@ public class GameManager : MonoBehaviour {
 
                     itemCount++;
                     if (itemCount == npcController.npcSO.items.Length) {
+                        timerController.DisableCountDown();
                         notepadCanvas.enabled = false;
 
                         AddMoney(npcController.npcSO.moneyOffer);
@@ -101,7 +103,7 @@ public class GameManager : MonoBehaviour {
                         isSelectingItems = false;
                         DisableAllItemSelections();
 
-                        npcController.SelectNextDialogue();
+                        npcController.SelectNextDialogue("Successful");
                     }
                 } else {
                     notepadTexts[i].text = npcController.npcSO.items[i].itemName;
@@ -121,6 +123,17 @@ public class GameManager : MonoBehaviour {
 
 
         isSelectingItems = true;
+
+        timerController.StartTimer(FailedCrafting, 10f);
+    }
+
+    private void FailedCrafting() {
+        notepadCanvas.enabled = false;
+
+        isSelectingItems = false;
+        DisableAllItemSelections();
+
+        npcController.SelectNextDialogue("Failed");
     }
 
     public void AddMoney(int addedMoney) {
