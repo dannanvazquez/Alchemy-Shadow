@@ -22,7 +22,7 @@ public class ClickAnywhereController : MonoBehaviour {
         float startTime = Time.time;
 
         // Wait until the input is true before continuing.
-        while (!Input.GetKeyDown(KeyCode.Mouse0)) {
+        while (!Input.GetKeyDown(KeyCode.Mouse0) || GameManager.Instance.IsPaused()) {
             if (!isCanvasEnabled && Time.time - startTime >= uiInterval) {
                 canvas.enabled = true;
                 isCanvasEnabled = true;

@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private Canvas notepadCanvas;
     [SerializeField] private TMP_Text[] notepadTexts;
 
+    [SerializeField] private PauseManager pauseManager;
+
     private NPCSO[] npcSOs;
     private ItemController[] items;
 
@@ -35,6 +37,8 @@ public class GameManager : MonoBehaviour {
     private int itemCount = 0;
 
     public static GameManager Instance { get; private set; }
+
+    public bool IsPaused() { return pauseManager.isPaused; }
 
     private void Awake() {
         // If there is an instance, and it's not me, delete myself.
