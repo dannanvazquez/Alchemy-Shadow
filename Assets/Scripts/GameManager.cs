@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     [Header("References")]
@@ -28,6 +29,8 @@ public class GameManager : MonoBehaviour {
     [Header("Settings")]
     [Tooltip("The amount of NPCs that spawn every day.")]
     [SerializeField] private int npcAmountPerDay;
+    [Tooltip("The max amount of days before the game ends.")]
+    [SerializeField] private int maxAmountOfDays;
 
     [HideInInspector] public bool isSelectingItems = false;
 
@@ -35,6 +38,12 @@ public class GameManager : MonoBehaviour {
     private int day = 0;
     private int todaysNpcAmount = 0;
     private int itemCount = 0;
+
+    // TODO: Properly change how client stats are determined after making a crafting SO derived from dialogue.
+    private int clientsServedStat = 0;
+    private int clientsSpawnedStat = 0;
+    private int moneySpentStat = 0;
+    private int moneyEarnedStat = 0;
 
     public static GameManager Instance { get; private set; }
 
@@ -57,6 +66,11 @@ public class GameManager : MonoBehaviour {
     }
 
     private IEnumerator NewDayCoroutine() {
+        if (day == maxAmountOfDays) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            yield break;
+        }
+
         day++;
         todaysNpcAmount = 0;
 
@@ -74,6 +88,7 @@ public class GameManager : MonoBehaviour {
             StartCoroutine(NewDayCoroutine());
         } else {
             todaysNpcAmount++;
+            clientsSpawnedStat++;
             StartCoroutine(SpawnNPCCoroutine());
         }
     }
@@ -143,5 +158,14 @@ public class GameManager : MonoBehaviour {
     public void AddMoney(int addedMoney) {
         money += addedMoney;
         moneyText.text = "$" + money;
+        moneyEarnedStat += addedMoney;
+        clientsServedStat++;
+    }
+
+    private void OnDisable() {
+        PlayerPrefs.SetFloat("clientsServed", clientsServedStat);
+        PlayerPrefs.SetFloat("clientsRefused", clientsSpawnedStat - clientsServedStat);
+        PlayerPrefs.SetFloat("moneySpent", moneySpentStat);
+        PlayerPrefs.SetFloat("moneyEarned", moneyEarnedStat);
     }
 }
