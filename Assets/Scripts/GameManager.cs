@@ -1,8 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     [Header("References")]
@@ -22,6 +20,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private TMP_Text[] notepadTexts;
 
     [SerializeField] private PauseManager pauseManager;
+    [SerializeField] private RecapUIController recapUIController;
 
     private NPCSO[] npcSOs;
     private ItemController[] items;
@@ -62,17 +61,21 @@ public class GameManager : MonoBehaviour {
         npcSOs = Resources.LoadAll<NPCSO>("ScriptableObjects/NPCs/");
         items = itemContainer.GetComponentsInChildren<ItemController>();
 
+        NextDay();
+    }
+
+    public void NextDay() {
         StartCoroutine(NewDayCoroutine());
     }
 
     private IEnumerator NewDayCoroutine() {
-        if (day == maxAmountOfDays) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            yield break;
-        }
-
         day++;
         todaysNpcAmount = 0;
+
+        clientsServedStat = 0;
+        clientsSpawnedStat = 0;
+        moneySpentStat = 0;
+        moneyEarnedStat = 0;
 
         dayText.text = "Day " + day;
         dayCanvas.enabled = true;
@@ -85,7 +88,12 @@ public class GameManager : MonoBehaviour {
 
     public void SpawnNPC() {
         if (todaysNpcAmount >= npcAmountPerDay) {
-            StartCoroutine(NewDayCoroutine());
+            if (day == maxAmountOfDays) {
+                recapUIController.EnableMainMenuButton();
+            }
+
+            string[] stats = { clientsServedStat.ToString(), (clientsSpawnedStat - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString() };
+            recapUIController.EnableCanvas(day, stats);
         } else {
             todaysNpcAmount++;
             clientsSpawnedStat++;
