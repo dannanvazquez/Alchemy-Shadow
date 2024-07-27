@@ -4,14 +4,13 @@ using UnityEngine;
 public class DialogueSO : ScriptableObject {
     [SerializeField] private string _dialogueText;
     [SerializeField] private string _inputText;
-    [SerializeField] private bool _initiatesCrafting;
     [SerializeField] private DialogueSO[] _dialogues;
 
     public string GetDialogueText() { return _dialogueText; }
 
     public string GetInputText() { return _inputText; }
 
-    public bool DoesInitiateCrafting() { return _initiatesCrafting; }
+    public virtual bool DoesInitiateCrafting() { return false; }
 
     public bool HasManyPaths() { return _dialogues.Length > 1; }
 

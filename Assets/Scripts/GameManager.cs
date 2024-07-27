@@ -115,17 +115,18 @@ public class GameManager : MonoBehaviour {
     }
 
     public void ToggleSelectedItem(ItemSO item, bool isSelected) {
-        for (int i = 0; i < npcController.npcSO.items.Length; i++) {
-            if (item == npcController.npcSO.items[i]) {
+        CraftingDialogueSO craftingDialogueSO = npcController.currentDialogueSO as CraftingDialogueSO;
+        for (int i = 0; i < craftingDialogueSO.items.Length; i++) {
+            if (item == craftingDialogueSO.items[i]) {
                 if (isSelected) {
-                    notepadTexts[i].text = $"<s>{npcController.npcSO.items[i].itemName}</s>";
+                    notepadTexts[i].text = $"<s>{craftingDialogueSO.items[i].itemName}</s>";
 
                     itemCount++;
-                    if (itemCount == npcController.npcSO.items.Length) {
+                    if (itemCount == craftingDialogueSO.items.Length) {
                         timerController.DisableCountDown();
                         notepadCanvas.enabled = false;
 
-                        AddMoney(npcController.npcSO.moneyOffer);
+                        AddMoney(craftingDialogueSO.moneyOffer);
 
                         isSelectingItems = false;
                         DisableAllItemSelections();
@@ -133,7 +134,7 @@ public class GameManager : MonoBehaviour {
                         npcController.SelectNextDialogue("Successful");
                     }
                 } else {
-                    notepadTexts[i].text = npcController.npcSO.items[i].itemName;
+                    notepadTexts[i].text = craftingDialogueSO.items[i].itemName;
 
                     itemCount--;
                 }
@@ -143,8 +144,9 @@ public class GameManager : MonoBehaviour {
     }
 
     public void EnableCrafting() {
-        for (int i = 0; i < npcController.npcSO.items.Length; i++) {
-            notepadTexts[i].text = npcController.npcSO.items[i].itemName;
+        CraftingDialogueSO craftingDialogueSO = npcController.currentDialogueSO as CraftingDialogueSO;
+        for (int i = 0; i < craftingDialogueSO.items.Length; i++) {
+            notepadTexts[i].text = craftingDialogueSO.items[i].itemName;
         }
         notepadCanvas.enabled = true;
 

@@ -5,7 +5,4 @@ public class NPCSO : ScriptableObject {
     public Sprite npcSprite;
 
     public DialogueSO dialogue;
-
-    public ItemSO[] items;
-    public int moneyOffer;
 }
