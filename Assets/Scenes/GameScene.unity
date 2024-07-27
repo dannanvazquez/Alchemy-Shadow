@@ -2019,8 +2019,12 @@ MonoBehaviour:
   - {fileID: 139946336}
   pauseManager: {fileID: 908165363}
   recapUIController: {fileID: 1683609771}
-  npcAmountPerDay: 5
-  maxAmountOfDays: 5
+  startingDialogueDays:
+  - {fileID: 11400000, guid: 1e2b7c45dba3d1d47b698cd6d5e5a9dc, type: 2}
+  - {fileID: 11400000, guid: 1e2b7c45dba3d1d47b698cd6d5e5a9dc, type: 2}
+  - {fileID: 11400000, guid: 1e2b7c45dba3d1d47b698cd6d5e5a9dc, type: 2}
+  - {fileID: 11400000, guid: 1e2b7c45dba3d1d47b698cd6d5e5a9dc, type: 2}
+  - {fileID: 11400000, guid: 1e2b7c45dba3d1d47b698cd6d5e5a9dc, type: 2}
   isSelectingItems: 0
 --- !u!114 &908165363
 MonoBehaviour:

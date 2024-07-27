@@ -18,14 +18,12 @@ public class NPCController : MonoBehaviour {
 
     [SerializeField] private ClickAnywhereController clickAnywhereController;
 
-    public NPCSO npcSO { get; private set; }
     public DialogueSO currentDialogueSO { get; private set; }
 
-    public void InitializeNPC(NPCSO newNPCSO) {
-        npcSO = newNPCSO;
-        currentDialogueSO = newNPCSO.dialogue;
+    public void InitializeNPC(DialogueSO initialDialogue) {
+        currentDialogueSO = initialDialogue;
 
-        npcSprite.sprite = newNPCSO.npcSprite;
+        npcSprite.sprite = initialDialogue.GetNPC().npcSprite;
         npcSprite.enabled = true;
 
         StartCoroutine(InitializeDialogueCoroutine());
@@ -53,13 +51,15 @@ public class NPCController : MonoBehaviour {
         speechSprite.enabled = false;
         choiceCanvas.enabled = false;
 
-        GameManager.Instance.SpawnNPC();
+        GameManager.Instance.EnableRecap();
     }
 
     public IEnumerator InitializeDialogueCoroutine() {
-        // Initial dialogue text
-        speechText.text = currentDialogueSO.GetDialogueText();
+        // Initial dialogue
+        NPCSO npcSO = currentDialogueSO.GetNPC();
+        speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
         EnableSpeechUI();
+        npcSprite.sprite = npcSO.npcSprite;
 
         // Check if this is a dialogue that you craft at.
         if (currentDialogueSO.DoesInitiateCrafting()) {

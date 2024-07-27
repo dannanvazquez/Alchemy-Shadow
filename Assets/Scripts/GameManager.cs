@@ -22,20 +22,14 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private PauseManager pauseManager;
     [SerializeField] private RecapUIController recapUIController;
 
-    private NPCSO[] npcSOs;
-    private ItemController[] items;
+    [SerializeField] private DialogueSO[] startingDialogueDays;
 
-    [Header("Settings")]
-    [Tooltip("The amount of NPCs that spawn every day.")]
-    [SerializeField] private int npcAmountPerDay;
-    [Tooltip("The max amount of days before the game ends.")]
-    [SerializeField] private int maxAmountOfDays;
+    private ItemController[] items;
 
     [HideInInspector] public bool isSelectingItems = false;
 
     private int money = 0;
     private int day = 0;
-    private int todaysNpcAmount = 0;
     private int itemCount = 0;
 
     // TODO: Properly change how client stats are determined after making a crafting SO derived from dialogue.
@@ -58,7 +52,6 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Start() {
-        npcSOs = Resources.LoadAll<NPCSO>("ScriptableObjects/NPCs/");
         items = itemContainer.GetComponentsInChildren<ItemController>();
 
         NextDay();
@@ -70,7 +63,6 @@ public class GameManager : MonoBehaviour {
 
     private IEnumerator NewDayCoroutine() {
         day++;
-        todaysNpcAmount = 0;
 
         clientsServedStat = 0;
         clientsSpawnedStat = 0;
@@ -83,29 +75,22 @@ public class GameManager : MonoBehaviour {
         yield return clickAnywhereController.AwaitInputCoroutine();
 
         dayCanvas.enabled = false;
-        SpawnNPC();
+        StartCoroutine(SpawnNPCCoroutine());
     }
 
-    public void SpawnNPC() {
-        if (todaysNpcAmount >= npcAmountPerDay) {
-            if (day == maxAmountOfDays) {
-                recapUIController.EnableMainMenuButton();
-            }
-
-            string[] stats = { clientsServedStat.ToString(), (clientsSpawnedStat - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString() };
-            recapUIController.EnableCanvas(day, stats);
-        } else {
-            todaysNpcAmount++;
-            clientsSpawnedStat++;
-            StartCoroutine(SpawnNPCCoroutine());
+    public void EnableRecap() {
+        if (day == startingDialogueDays.Length) {
+            recapUIController.EnableMainMenuButton();
         }
+
+        string[] stats = { clientsServedStat.ToString(), (clientsSpawnedStat - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString() };
+        recapUIController.EnableCanvas(day, stats);
     }
 
     private IEnumerator SpawnNPCCoroutine() {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
-        NPCSO npcSO = npcSOs[Random.Range(0, npcSOs.Length)];
-        npcController.InitializeNPC(npcSO);
+        npcController.InitializeNPC(startingDialogueDays[day-1]);
     }
 
     public void DisableAllItemSelections() {

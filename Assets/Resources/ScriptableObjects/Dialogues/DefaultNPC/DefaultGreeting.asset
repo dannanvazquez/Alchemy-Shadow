@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
   m_Name: DefaultGreeting
   m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 6fe1c1de4c7430441bcb20f1def879b2, type: 2}
   _dialogueText: I haven't slept in days. My boyfriend makes too much noise. Do you
     have a potion capable of knocking out cold just about anything alive?
   _inputText: 
-  _initiatesCrafting: 0
   _dialogues:
-  - {fileID: 11400000, guid: bc9f95f63cb05c34f9ece6d19353370a, type: 2}
+  - {fileID: 11400000, guid: 727a06255d82d1d4bb9289d6213c778c, type: 2}
   - {fileID: 11400000, guid: 058e9c885ff43ea42a170f2dc16d39e7, type: 2}

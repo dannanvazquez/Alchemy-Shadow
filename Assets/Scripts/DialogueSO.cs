@@ -2,9 +2,12 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Dialogue", menuName = "ScriptableObjects/Dialogue")]
 public class DialogueSO : ScriptableObject {
+    [SerializeField] private NPCSO _npcSO;
     [SerializeField] private string _dialogueText;
     [SerializeField] private string _inputText;
     [SerializeField] private DialogueSO[] _dialogues;
+
+    public NPCSO GetNPC() { return _npcSO; }
 
     public string GetDialogueText() { return _dialogueText; }
 

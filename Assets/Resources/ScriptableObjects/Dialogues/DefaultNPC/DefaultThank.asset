@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
   m_Name: DefaultThank
   m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 6fe1c1de4c7430441bcb20f1def879b2, type: 2}
   _dialogueText: Thanks! Bye.
   _inputText: Successful
-  _initiatesCrafting: 0
   _dialogues: []
