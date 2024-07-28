@@ -1,10 +1,12 @@
 using UnityEngine;
 
+// TODO: Make a clean BaseDialogueSO that all dialogue will derive from. For example, most of these variables aren't needed in ConditionalDialogueSO.
 [CreateAssetMenu(fileName = "Dialogue", menuName = "ScriptableObjects/Dialogue")]
 public class DialogueSO : ScriptableObject {
     [SerializeField] private NPCSO _npcSO;
     [SerializeField] private string _dialogueText;
     [SerializeField] private string _inputText;
+    [SerializeField] private string memoryTag;
     [SerializeField] private DialogueSO[] _dialogues;
 
     public NPCSO GetNPC() { return _npcSO; }
@@ -13,7 +15,11 @@ public class DialogueSO : ScriptableObject {
 
     public string GetInputText() { return _inputText; }
 
+    public bool HasMemoryTag() { return memoryTag != string.Empty; }
+    public string GetMemoryTag() { return memoryTag; }
+
     public virtual bool DoesInitiateCrafting() { return false; }
+    public virtual bool IsConditional() { return false; }
 
     public bool HasManyPaths() { return _dialogues.Length > 1; }
 

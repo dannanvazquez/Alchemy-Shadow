@@ -1,8 +1,7 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class NPCController : MonoBehaviour {
@@ -17,6 +16,8 @@ public class NPCController : MonoBehaviour {
     [SerializeField] private GameObject choiceButtonPrefab;
 
     [SerializeField] private ClickAnywhereController clickAnywhereController;
+
+    private List<string> memoryTags = new();
 
     public DialogueSO currentDialogueSO { get; private set; }
 
@@ -55,6 +56,21 @@ public class NPCController : MonoBehaviour {
     }
 
     public IEnumerator InitializeDialogueCoroutine() {
+        // Add memory tag for future conditionals.
+        if (currentDialogueSO.HasMemoryTag()) {
+            memoryTags.Add(currentDialogueSO.GetMemoryTag());
+        }
+
+        // Check if the dialogue is a conditional.
+        if (currentDialogueSO.IsConditional()) {
+            if (memoryTags.Contains((currentDialogueSO as ConditionalTagDialogueSO).conditionalTag)) {
+                SelectNextDialogue("True");
+            } else {
+                SelectNextDialogue("False");
+            }
+            yield break;
+        }
+
         // Initial dialogue
         NPCSO npcSO = currentDialogueSO.GetNPC();
         speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
