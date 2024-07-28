@@ -62,8 +62,15 @@ public class NPCController : MonoBehaviour {
         }
 
         // Check if the dialogue is a conditional.
-        if (currentDialogueSO.IsConditional()) {
+        if (currentDialogueSO.IsConditionalTag()) {
             if (memoryTags.Contains((currentDialogueSO as ConditionalTagDialogueSO).conditionalTag)) {
+                SelectNextDialogue("True");
+            } else {
+                SelectNextDialogue("False");
+            }
+            yield break;
+        } else if (currentDialogueSO.IsConditionalMoney()) {
+            if (GameManager.Instance.IsEnoughMoney((currentDialogueSO as ConditionalMoneyDialogueSO).minimumMoneyAmount)) {
                 SelectNextDialogue("True");
             } else {
                 SelectNextDialogue("False");

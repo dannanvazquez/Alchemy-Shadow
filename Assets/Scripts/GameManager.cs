@@ -163,4 +163,6 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.SetFloat("moneySpent", moneySpentStat);
         PlayerPrefs.SetFloat("moneyEarned", moneyEarnedStat);
     }
+
+    public bool IsEnoughMoney(int amount) { return amount >= money; }
 }

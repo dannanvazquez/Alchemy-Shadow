@@ -4,5 +4,5 @@ using UnityEngine;
 public class ConditionalTagDialogueSO : DialogueSO {
     public string conditionalTag;
 
-    public override bool IsConditional() { return true; }
+    public override bool IsConditionalTag() { return true; }
 }

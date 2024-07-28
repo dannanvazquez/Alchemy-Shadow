@@ -19,7 +19,8 @@ public class DialogueSO : ScriptableObject {
     public string GetMemoryTag() { return memoryTag; }
 
     public virtual bool DoesInitiateCrafting() { return false; }
-    public virtual bool IsConditional() { return false; }
+    public virtual bool IsConditionalTag() { return false; }
+    public virtual bool IsConditionalMoney() { return false; }
 
     public bool HasManyPaths() { return _dialogues.Length > 1; }
 
