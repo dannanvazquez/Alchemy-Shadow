@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client8.1Accept
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
+  _dialogueText: I know my husband doesn't mean to be bad. But I just wish he took
+    a third of his time researching business strategies to instead help around the
+    house.
+  _inputText: Accept
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 7de9ad0588267ca4e8c8e66bd06c6e14, type: 2}

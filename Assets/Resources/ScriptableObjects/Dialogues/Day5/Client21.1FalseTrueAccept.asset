@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b39fb437574d441a11732f7b7763d8, type: 3}
+  m_Name: Client21.1FalseTrueAccept
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
+  _dialogueText: I'm so incredibly resentful, but I'll keep my anger down for now.
+    This better help fix things. I would be ashamed if I was you.
+  _inputText: Accept
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 357a62484a2796c479b9a200b2192244, type: 2}
+  items:
+  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
+  moneyOffer: 5

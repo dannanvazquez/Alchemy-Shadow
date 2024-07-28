@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client9.1True
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 558e9fd48b1d9fb47b82747da1224f1f, type: 2}
+  _dialogueText: Hey! Thanks a lot again for last time. My throat finally started
+    getting better! I did drop what you made me though... Any chance you can brew
+    an other, still cannot pay just yet though.
+  _inputText: True
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 201a75dcabcfc0b4db0e803816f3c781, type: 2}
+  - {fileID: 11400000, guid: de654b987ee20bb4fa33f0292f166446, type: 2}

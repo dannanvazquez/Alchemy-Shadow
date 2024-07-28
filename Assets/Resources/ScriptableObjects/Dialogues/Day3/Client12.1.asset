@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client12.1
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
+  _dialogueText: HEY YOU. WHAT EVEN IS THIS PLACE, IT LOOKS SHADY.
+  _inputText: 
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 1c7678707f991534191f5b1b81aa2510, type: 2}

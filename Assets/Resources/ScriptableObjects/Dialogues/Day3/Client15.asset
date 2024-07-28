@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client15
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
+  _dialogueText: Do you have anything undetectable capable of inducing a coma?
+  _inputText: 
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: cb39e8424533714428a6627fc11f405e, type: 2}
+  - {fileID: 11400000, guid: 07d3793d34b12144da441474e8d4d9ff, type: 2}

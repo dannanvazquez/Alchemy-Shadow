@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b39fb437574d441a11732f7b7763d8, type: 3}
+  m_Name: Client19.1Accept
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
+  _dialogueText: Thanks, my lovely wife is suffering from headaches. If I could take
+    her pain and make it mine, I would too.
+  _inputText: Accept
+  memoryTag: Client19.1Accept
+  _dialogues:
+  - {fileID: 11400000, guid: f75d59ade1bde354eba78cc88e196f97, type: 2}
+  items:
+  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
+  moneyOffer: 5

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client5.1
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: c4f8c7bcf13d1c449879ff516c9155dd, type: 2}
+  _dialogueText: Hello. I'm a bit ill. I'll absolutely make it, no worries, but I
+    might not be able to pay you. I was wondering if there was any chance you could
+    make me something to take my throat pain away, just this one time?
+  _inputText: 
+  _dialogues:
+  - {fileID: 11400000, guid: e3886fc599e037a4c8f59849a1758c1d, type: 2}
+  - {fileID: 11400000, guid: aba2980b578c24244bd0f82b187b9472, type: 2}

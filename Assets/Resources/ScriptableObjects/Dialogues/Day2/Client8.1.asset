@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client8.1
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
+  _dialogueText: Hello! I'm having a hard time taking care of all my kids. And my
+    husband. I was wondering if you had anything that could help me out with getting
+    more energy?
+  _inputText: 
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 9b43198a7c68d4c46b06bdbdd5b803a9, type: 2}
+  - {fileID: 11400000, guid: 83aa1f090db8a994284e0d273dd32c5e, type: 2}

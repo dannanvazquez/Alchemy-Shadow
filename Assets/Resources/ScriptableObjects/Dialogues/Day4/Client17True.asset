@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client17True
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
+  _dialogueText: Hello. I'm having a lot of trouble understanding myself... I've
+    been acting irrationally and I just cannot seem to understand why or how it's
+    happening. All I know is I had finally worked up the courage to tell my husband
+    he needs to pull his weight but somehow I cannot seem to make any argument for
+    it. I want to ask him to take a listening potion or something.
+  _inputText: True
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 1c79484e08266454ba4d0fc6cea60c8f, type: 2}
+  - {fileID: 11400000, guid: e134f3621dea9be4987d5e58d1095e3c, type: 2}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client2.1
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 7b8abbbf94892d343bffcce2fe645d1f, type: 2}
+  _dialogueText: Hello precious! I hope you're having a lovely day so far. I'm having
+    more trouble than usual hearing my husband and I'm scared that he's irriversably
+    damaging his throat screaming his answers all day. Any chance you have something
+    that could help me hear better?
+  _inputText: 
+  _dialogues:
+  - {fileID: 11400000, guid: 506d4be10fb39a84fa5a053ae14c123a, type: 2}
+  - {fileID: 11400000, guid: 86436e67f5188594699e5e4464c93001, type: 2}

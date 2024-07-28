@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: FirstClient2
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
+  _dialogueText: Their face always creeps me out... You'd think only seeing people
+    like them on TV would get us used to their... "cuteness". But not quite.
+  _inputText: 
+  _dialogues:
+  - {fileID: 11400000, guid: 50d8bbb9f63ca824da2a1018e30fe0fa, type: 2}

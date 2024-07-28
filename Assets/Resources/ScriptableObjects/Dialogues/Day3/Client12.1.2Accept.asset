@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b39fb437574d441a11732f7b7763d8, type: 3}
+  m_Name: Client12.1.2Accept
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
+  _dialogueText: THANKS! I DON'T MIND RAISING MY VOICE FOR HER. But I am scared at
+    this rhythm, I won't be able to keep on doing it much longer. AND I CANNOT ALLOW
+    THAT.
+  _inputText: Accept
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 234a161aceba5834eb6fc6ff63c0ac8c, type: 2}
+  items:
+  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
+  moneyOffer: 5

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b39fb437574d441a11732f7b7763d8, type: 3}
+  m_Name: Client5.1Accept
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: c4f8c7bcf13d1c449879ff516c9155dd, type: 2}
+  _dialogueText: Oh! Really? Oh my god, see Gringy, I told you I'm just the luckiest!
+    Thank you so very much!
+  _inputText: Accept
+  memoryTag: Client5.1Accept
+  _dialogues: []
+  items:
+  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
+  moneyOffer: 5

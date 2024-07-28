@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client9.1False
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
+  _dialogueText: Hey. I was there yesterday. You refused to help out Silverthin.
+    She really downplayed her symptoms and really could use some help. I cannot pay
+    you yet either but I'm really working hard to finding the money.
+  _inputText: False
+  memoryTag: 
+  _dialogues:
+  - {fileID: 11400000, guid: 7efd4069190384946aa866b9be27b144, type: 2}
+  - {fileID: 11400000, guid: c3005abc23d00ec45bd2584768183d5d, type: 2}

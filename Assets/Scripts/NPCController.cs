@@ -24,7 +24,6 @@ public class NPCController : MonoBehaviour {
     public void InitializeNPC(DialogueSO initialDialogue) {
         currentDialogueSO = initialDialogue;
 
-        npcSprite.sprite = initialDialogue.GetNPC().npcSprite;
         npcSprite.enabled = true;
 
         StartCoroutine(InitializeDialogueCoroutine());
