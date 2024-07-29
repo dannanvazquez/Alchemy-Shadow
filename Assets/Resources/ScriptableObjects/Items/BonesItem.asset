@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BonesItem
   m_EditorClassIdentifier: 
   itemName: Bones
+  price: 10

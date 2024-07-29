@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: JuiceItem
   m_EditorClassIdentifier: 
   itemName: Juice
+  price: 5

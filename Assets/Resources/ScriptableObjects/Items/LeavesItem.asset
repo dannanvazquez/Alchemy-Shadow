@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: LeavesItem
   m_EditorClassIdentifier: 
   itemName: Leaves
+  price: 1

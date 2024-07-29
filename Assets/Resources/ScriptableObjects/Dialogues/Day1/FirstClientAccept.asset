@@ -17,10 +17,13 @@ MonoBehaviour:
     I mean... I know I'm succesful. Because I am. Everybody smart enough to understand
     my very complicated business could get it. I just needed anyone to be able to
     grasp it, you know?
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: FirstClientAccept
   _dialogues:
   - {fileID: 11400000, guid: 0bd5c48ef66e241478e95a7d6ab76d3e, type: 2}
   items:
   - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
+  - {fileID: 11400000, guid: ed8974620b31b094ab672d891fc9fe17, type: 2}
+  - {fileID: 11400000, guid: 43517ebddb260ed4988c4bf4c419a452, type: 2}
   moneyOffer: 5

@@ -10,7 +10,7 @@ public class ItemController : MonoBehaviour {
     private bool _isSelected = false;
 
     private void Awake() {
-        nameText.text = itemSO.itemName;
+        nameText.text = $"{itemSO.itemName} (${itemSO.price})";
     }
 
     void OnMouseEnter() {

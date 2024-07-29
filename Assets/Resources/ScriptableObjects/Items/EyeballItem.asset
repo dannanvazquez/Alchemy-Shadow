@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: EyeballItem
   m_EditorClassIdentifier: 
   itemName: Eyeballs
+  price: 15

@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private DialogueSO[] startingDialogueDays;
 
+    [Header("Settings")]
+    [SerializeField] private int startingMoney;
+
     private ItemController[] items;
 
     [HideInInspector] public bool isSelectingItems = false;
@@ -34,7 +37,6 @@ public class GameManager : MonoBehaviour {
 
     // TODO: Properly change how client stats are determined after making a crafting SO derived from dialogue.
     private int clientsServedStat = 0;
-    private int clientsSpawnedStat = 0;
     private int moneySpentStat = 0;
     private int moneyEarnedStat = 0;
 
@@ -54,6 +56,9 @@ public class GameManager : MonoBehaviour {
     private void Start() {
         items = itemContainer.GetComponentsInChildren<ItemController>();
 
+        money = startingMoney;
+        moneyText.text = "$" + startingMoney;
+
         NextDay();
     }
 
@@ -65,7 +70,6 @@ public class GameManager : MonoBehaviour {
         day++;
 
         clientsServedStat = 0;
-        clientsSpawnedStat = 0;
         moneySpentStat = 0;
         moneyEarnedStat = 0;
 
@@ -83,7 +87,7 @@ public class GameManager : MonoBehaviour {
             recapUIController.EnableMainMenuButton();
         }
 
-        string[] stats = { clientsServedStat.ToString(), (clientsSpawnedStat - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString() };
+        string[] stats = { clientsServedStat.ToString(), (5 - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString() };
         recapUIController.EnableCanvas(day, stats);
     }
 
@@ -107,6 +111,7 @@ public class GameManager : MonoBehaviour {
                     notepadTexts[i].text = $"<s>{craftingDialogueSO.items[i].itemName}</s>";
 
                     itemCount++;
+                    BuyItem(item.price);
                     if (itemCount == craftingDialogueSO.items.Length) {
                         timerController.DisableCountDown();
                         notepadCanvas.enabled = false;
@@ -122,6 +127,7 @@ public class GameManager : MonoBehaviour {
                     notepadTexts[i].text = craftingDialogueSO.items[i].itemName;
 
                     itemCount--;
+                    RefundItem(item.price);
                 }
                 break;
             }
@@ -150,18 +156,27 @@ public class GameManager : MonoBehaviour {
         npcController.SelectNextDialogue("Failed");
     }
 
+    private void BuyItem(int price) {
+        if (!isSelectingItems) return;
+
+        money -= price;
+        moneyText.text = "$" + money;
+        moneySpentStat += price;
+    }
+
+    private void RefundItem(int price) {
+        if (!isSelectingItems) return;
+
+        money += price;
+        moneyText.text = "$" + money;
+        moneySpentStat -= price;
+    }
+
     public void AddMoney(int addedMoney) {
         money += addedMoney;
         moneyText.text = "$" + money;
         moneyEarnedStat += addedMoney;
         clientsServedStat++;
-    }
-
-    private void OnDisable() {
-        PlayerPrefs.SetFloat("clientsServed", clientsServedStat);
-        PlayerPrefs.SetFloat("clientsRefused", clientsSpawnedStat - clientsServedStat);
-        PlayerPrefs.SetFloat("moneySpent", moneySpentStat);
-        PlayerPrefs.SetFloat("moneyEarned", moneyEarnedStat);
     }
 
     public bool IsEnoughMoney(int amount) { return amount >= money; }
