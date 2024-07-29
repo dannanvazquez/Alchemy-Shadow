@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Wordly
   m_EditorClassIdentifier: 
   npcName: Wordly
-  npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  npcSprite: {fileID: 21300000, guid: a1addf95479abcf449f80578d8710e27, type: 3}
+  associatedNPCS: []

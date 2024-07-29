@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Oongle
   m_EditorClassIdentifier: 
   npcName: Oongle
-  npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  npcSprite: {fileID: 21300000, guid: 73cb34e354974e74ab6ecabf3de2cdcf, type: 3}
+  associatedNPCS: []

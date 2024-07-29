@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Silverthin (and Gringy)
   npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  associatedNPCS:
+  - {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
+  - {fileID: 11400000, guid: 0933c42a7c039cf46b7907be670f580f, type: 2}
+  - {fileID: 11400000, guid: 0933c42a7c039cf46b7907be670f580f, type: 2}
+  - {fileID: 11400000, guid: 558e9fd48b1d9fb47b82747da1224f1f, type: 2}

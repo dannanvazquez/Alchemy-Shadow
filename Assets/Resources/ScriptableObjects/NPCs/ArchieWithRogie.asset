@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcName: Archie (and Rogie)
   npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  associatedNPCS:
+  - {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
+  - {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}

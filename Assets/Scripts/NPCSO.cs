@@ -4,4 +4,5 @@ using UnityEngine;
 public class NPCSO : ScriptableObject {
     public string npcName;
     public Sprite npcSprite;
+    public NPCSO[] associatedNPCS;
 }
