@@ -798,7 +798,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1084,6 +1084,7 @@ MonoBehaviour:
   choiceCanvas: {fileID: 824922912}
   choiceButtonPrefab: {fileID: 6587968185795647203, guid: 23fa9935fa8b1c240a382438ef0408f5, type: 3}
   clickAnywhereController: {fileID: 422283421}
+  transitionTime: 1
 --- !u!82 &447591150
 AudioSource:
   m_ObjectHideFlags: 0

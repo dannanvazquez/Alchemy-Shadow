@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,12 @@ public class NPCController : MonoBehaviour {
     [SerializeField] private GameObject choiceButtonPrefab;
 
     [SerializeField] private ClickAnywhereController clickAnywhereController;
+
+    [Header("Settings")]
+    [Tooltip("The amount of seconds to transition entering and leaving NPCs.")]
+    [SerializeField] private float transitionTime;
+
+    private NPCSO previousNPC;
 
     private List<string> memoryTags = new();
 
@@ -57,6 +64,8 @@ public class NPCController : MonoBehaviour {
 
     public IEnumerator InitializeDialogueCoroutine() {
         npcAudioSource.Stop();
+        speechCanvas.enabled = false;
+        speechSprite.enabled = false;
 
         // Add memory tag for future conditionals.
         if (currentDialogueSO.HasMemoryTag()) {
@@ -82,11 +91,13 @@ public class NPCController : MonoBehaviour {
 
         // Initial dialogue
         NPCSO npcSO = currentDialogueSO.GetNPC();
+        yield return StartCoroutine(SwitchNpcSpriteCoroutine(npcSO));
+
         speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
         EnableSpeechUI();
         npcAudioSource.clip = currentDialogueSO.GetDialogueAudio();
         npcAudioSource.Play();
-        npcSprite.sprite = npcSO.npcSprite;
+
 
         // Check if this is a dialogue that you craft at.
         if (currentDialogueSO.DoesInitiateCrafting()) {
@@ -130,6 +141,37 @@ public class NPCController : MonoBehaviour {
             StartCoroutine(InitializeDialogueCoroutine());
         } else {
             DespawnNPC();
+        }
+    }
+
+    private IEnumerator SwitchNpcSpriteCoroutine(NPCSO npcSO) {
+        if (previousNPC == null) {
+            npcSprite.sprite = npcSO.npcSprite;
+
+            yield return StartCoroutine(ToggleFadeNPCCoroutine(true));
+        } else if (previousNPC != npcSO) {
+            if (previousNPC.associatedNPCS.Contains(npcSO)) {
+                npcSprite.sprite = npcSO.npcSprite;
+            } else {
+                yield return StartCoroutine(ToggleFadeNPCCoroutine(false));
+
+                npcSprite.sprite = npcSO.npcSprite;
+
+                yield return StartCoroutine(ToggleFadeNPCCoroutine(true));
+            }
+        }
+        previousNPC = npcSO;
+    }
+
+    private IEnumerator ToggleFadeNPCCoroutine(bool isEntering) {
+        float elapsedTime = 0f;
+        Color initialColor = npcSprite.color;
+        Color targetColor = new Color(initialColor.r, initialColor.g, initialColor.b, isEntering ? 1 : 0);
+
+        while (elapsedTime < transitionTime) {
+            elapsedTime += Time.deltaTime;
+            npcSprite.color = Color.Lerp(initialColor, targetColor, elapsedTime / transitionTime);
+            yield return null;
         }
     }
 }
