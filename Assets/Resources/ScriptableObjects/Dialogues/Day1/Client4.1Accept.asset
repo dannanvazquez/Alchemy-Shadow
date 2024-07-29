@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 4c01f2b93efc06246b33a139bd866975, type: 2}
   _dialogueText: Lovely! My name's Charlie by the way. Happy to help!
+  _dialogueAudio: {fileID: 8300000, guid: 54057ec9c9d7a624d84cb6c4f63b374c, type: 3}
   _inputText: Accept
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: ad062c0863125984d9b961c5d8cad6c0, type: 2}
   items:

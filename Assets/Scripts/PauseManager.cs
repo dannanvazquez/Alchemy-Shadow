@@ -6,6 +6,7 @@ public class PauseManager : MonoBehaviour {
     [SerializeField] private Canvas optionsCanvas;
     [SerializeField] private AudioMixerSnapshot pausedMixerSnapshot;
     [SerializeField] private AudioMixerSnapshot unpausedMixerSnapshot;
+    [SerializeField] private AudioSource[] pausedAudioSources;
 
     [Header("Settings")]
     [Tooltip("The amount of seconds it takes to transition between AudioMixerSnapshots.")]
@@ -22,16 +23,27 @@ public class PauseManager : MonoBehaviour {
     public void TogglePause() {
         isPaused = !isPaused;
         optionsCanvas.enabled = isPaused;
-        Time.timeScale = isPaused ? 0 : 1;
-
         Lowpass();
+        MuteAudioSources();
+
+        Time.timeScale = isPaused ? 0 : 1;
     }
 
     private void Lowpass() {
-        if (Time.timeScale == 0) {
+        if (isPaused) {
             pausedMixerSnapshot.TransitionTo(snapshotTransitionTime);
         } else {
             unpausedMixerSnapshot.TransitionTo(snapshotTransitionTime);
+        }
+    }
+
+    private void MuteAudioSources() {
+        foreach (var source in pausedAudioSources) {
+            if (isPaused) {
+                source.Pause();
+            } else {
+                source.UnPause();
+            }
         }
     }
 }

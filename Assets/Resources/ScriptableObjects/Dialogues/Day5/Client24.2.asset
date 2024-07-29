@@ -16,7 +16,8 @@ MonoBehaviour:
   _dialogueText: "Like, the confidence potion. It's lovely, people drink it and feel
     great for a bit, but then they come back for more. It\u2019s like a band-aid,
     not a cure."
+  _dialogueAudio: {fileID: 8300000, guid: d89d4cb7942dc66468a67e8dd2bca5bb, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:
-  - {fileID: 11400000, guid: 27b742e0a00eae24386e11938411c73e, type: 2}
+  - {fileID: 11400000, guid: 6a7ed39a3035ab74698793be8654850f, type: 2}

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
-  m_Name: Client24.3
+  m_Name: Client24.4
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 4c01f2b93efc06246b33a139bd866975, type: 2}
-  _dialogueText: You have an incredible way about you. The neighbourhood barges in,
-    tells you vaguely about what's bothering them and you work up miraculous ways
-    to help them! But it does all feel temporary.
-  _dialogueAudio: {fileID: 8300000, guid: d4b4fbfa76a2bdf4ca23ff8204ae395f, type: 3}
+  _dialogueText: There's this thing called shadow work. It's about confronting your
+    inner darker parts of yourselves. Like trauma and resentment. I wonder if instead
+    of what-
+  _dialogueAudio: {fileID: 8300000, guid: 6d4062e384b52c34089442e31fa3e6ac, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:
-  - {fileID: 11400000, guid: 27b742e0a00eae24386e11938411c73e, type: 2}
+  - {fileID: 11400000, guid: efa7f281b961c304286fe5b577412192, type: 2}

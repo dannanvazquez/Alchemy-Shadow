@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueSO : ScriptableObject {
     [SerializeField] private NPCSO _npcSO;
     [SerializeField] private string _dialogueText;
+    [SerializeField] private AudioClip _dialogueAudio;
     [SerializeField] private string _inputText;
     [SerializeField] private string memoryTag;
     [SerializeField] private DialogueSO[] _dialogues;
@@ -12,6 +13,8 @@ public class DialogueSO : ScriptableObject {
     public NPCSO GetNPC() { return _npcSO; }
 
     public string GetDialogueText() { return _dialogueText; }
+
+    public AudioClip GetDialogueAudio() { return _dialogueAudio; }
 
     public string GetInputText() { return _inputText; }
 

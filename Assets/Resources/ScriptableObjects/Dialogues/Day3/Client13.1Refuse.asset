@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 4c01f2b93efc06246b33a139bd866975, type: 2}
   _dialogueText: Really? Why would you refuse to serve me... I really don't get it.
+  _dialogueAudio: {fileID: 8300000, guid: cac28f36e26d40b4cb5c26cf700cb9f0, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Hey! Hope you're doing well! Seems things are a bit tense around
     here. I see you working on all those little cures of yours, and I always wonder
     if there's a better way to help them all.
+  _dialogueAudio: {fileID: 8300000, guid: 39096bcbd2858e34981a2bae7ce243e8, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

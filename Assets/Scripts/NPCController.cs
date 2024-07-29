@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NPCController : MonoBehaviour {
     [Header("References")]
     [SerializeField] private SpriteRenderer npcSprite;
+    [SerializeField] private AudioSource npcAudioSource;
 
     [SerializeField] private SpriteRenderer speechSprite;
     [SerializeField] private Canvas speechCanvas;
@@ -55,6 +56,8 @@ public class NPCController : MonoBehaviour {
     }
 
     public IEnumerator InitializeDialogueCoroutine() {
+        npcAudioSource.Stop();
+
         // Add memory tag for future conditionals.
         if (currentDialogueSO.HasMemoryTag()) {
             memoryTags.Add(currentDialogueSO.GetMemoryTag());
@@ -81,6 +84,8 @@ public class NPCController : MonoBehaviour {
         NPCSO npcSO = currentDialogueSO.GetNPC();
         speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
         EnableSpeechUI();
+        npcAudioSource.clip = currentDialogueSO.GetDialogueAudio();
+        npcAudioSource.Play();
         npcSprite.sprite = npcSO.npcSprite;
 
         // Check if this is a dialogue that you craft at.

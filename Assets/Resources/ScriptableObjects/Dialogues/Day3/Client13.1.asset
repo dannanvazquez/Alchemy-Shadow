@@ -15,6 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 4c01f2b93efc06246b33a139bd866975, type: 2}
   _dialogueText: Oh hi! I'm looking for a... potion! That does... things! I will
     pay you handsomely!
+  _dialogueAudio: {fileID: 8300000, guid: 98964a0e1ae59874994bc58a2db59f0a, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:
