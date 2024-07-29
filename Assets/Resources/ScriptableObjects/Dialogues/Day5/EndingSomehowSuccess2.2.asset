@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: EndingSomehowSuccess2.2
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
-  _dialogueText: Hum.. About XX.
+  _dialogueText: Hum.. About $[moneyLeft].
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   _dialogues:

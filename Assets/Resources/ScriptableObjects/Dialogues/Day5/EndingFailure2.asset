@@ -17,7 +17,8 @@ MonoBehaviour:
     don't have what it takes to run a successfull business. The second was probably
     to chase greed over morals. I thought that you people had at least one thing,
     unity. But I guess I was wrong.
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   _dialogues:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 5ed5084d505ef414c8a9b3055719ec0c, type: 2}

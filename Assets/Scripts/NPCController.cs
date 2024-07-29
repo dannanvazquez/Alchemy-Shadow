@@ -93,7 +93,7 @@ public class NPCController : MonoBehaviour {
         NPCSO npcSO = currentDialogueSO.GetNPC();
         yield return StartCoroutine(SwitchNpcSpriteCoroutine(npcSO));
 
-        speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
+        speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}".Replace("[moneyLeft]", GameManager.Instance.RemainingMoneyOwed().ToString());
         EnableSpeechUI();
         npcAudioSource.clip = currentDialogueSO.GetDialogueAudio();
         npcAudioSource.Play();

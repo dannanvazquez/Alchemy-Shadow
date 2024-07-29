@@ -25,7 +25,10 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private DialogueSO[] startingDialogueDays;
 
     [Header("Settings")]
+    [Tooltip("The amount of money the player starts with.")]
     [SerializeField] private int startingMoney;
+    [Tooltip("The amount of money the player is owed by the end of the game.")]
+    [SerializeField] private int moneyOwed;
 
     private ItemController[] items;
 
@@ -180,4 +183,6 @@ public class GameManager : MonoBehaviour {
     }
 
     public bool IsEnoughMoney(int amount) { return amount >= money; }
+
+    public int RemainingMoneyOwed() { return moneyOwed - money; }
 }

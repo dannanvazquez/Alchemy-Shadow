@@ -1084,7 +1084,7 @@ MonoBehaviour:
   choiceCanvas: {fileID: 824922912}
   choiceButtonPrefab: {fileID: 6587968185795647203, guid: 23fa9935fa8b1c240a382438ef0408f5, type: 3}
   clickAnywhereController: {fileID: 422283421}
-  transitionTime: 1
+  transitionTime: 0.5
 --- !u!82 &447591150
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2125,6 +2125,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1f8cc0d2b041b5f4785db7cae5baf0a6, type: 2}
   - {fileID: 11400000, guid: 78cc69aa6bc45b748b14d26dea9e3572, type: 2}
   startingMoney: 100
+  moneyOwed: 200
   isSelectingItems: 0
 --- !u!114 &908165363
 MonoBehaviour:
