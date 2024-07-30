@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private Canvas dayCanvas;
     [SerializeField] private TMP_Text dayText;
 
+    [SerializeField] private SpriteRenderer notepadSprite;
     [SerializeField] private Canvas notepadCanvas;
     [SerializeField] private TMP_Text[] notepadTexts;
 
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour {
                     if (itemCount == craftingDialogueSO.items.Length) {
                         timerController.DisableCountDown();
                         notepadCanvas.enabled = false;
+                        notepadSprite.enabled = false;
 
                         AddMoney(craftingDialogueSO.moneyOffer);
 
@@ -143,6 +145,7 @@ public class GameManager : MonoBehaviour {
             notepadTexts[i].text = craftingDialogueSO.items[i].itemName;
         }
         notepadCanvas.enabled = true;
+        notepadSprite.enabled = true;
 
 
         isSelectingItems = true;
@@ -152,6 +155,7 @@ public class GameManager : MonoBehaviour {
 
     private void FailedCrafting() {
         notepadCanvas.enabled = false;
+        notepadSprite.enabled = false;
 
         isSelectingItems = false;
         DisableAllItemSelections();

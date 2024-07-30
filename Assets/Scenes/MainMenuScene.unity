@@ -970,7 +970,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 960, y: 600}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2083,6 +2083,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1619132158236577649, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1892748330756632644, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
       propertyPath: m_Name
       value: Options Canvas
@@ -2246,6 +2250,10 @@ PrefabInstance:
     - target: {fileID: 3882456683383204664, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061677467316116173, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7071858382511903243, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
       propertyPath: m_AnchorMax.y

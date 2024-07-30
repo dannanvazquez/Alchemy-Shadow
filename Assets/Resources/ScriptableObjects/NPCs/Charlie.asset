@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Charlie
   m_EditorClassIdentifier: 
   npcName: Charlie
-  npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  npcSprite: {fileID: 21300000, guid: 3f78e38af47ee814da073955bf48b1c4, type: 3}
+  associatedNPCS: []
