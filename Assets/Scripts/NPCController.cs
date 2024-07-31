@@ -32,6 +32,8 @@ public class NPCController : MonoBehaviour {
     public void InitializeNPC(DialogueSO initialDialogue) {
         currentDialogueSO = initialDialogue;
 
+        previousNPC = null;
+        npcSprite.color = new Color(npcSprite.color.r, npcSprite.color.g, npcSprite.color.b, 0);
         npcSprite.enabled = true;
 
         StartCoroutine(InitializeDialogueCoroutine());
@@ -93,7 +95,10 @@ public class NPCController : MonoBehaviour {
         NPCSO npcSO = currentDialogueSO.GetNPC();
         yield return StartCoroutine(SwitchNpcSpriteCoroutine(npcSO));
 
-        speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}".Replace("[moneyLeft]", GameManager.Instance.RemainingMoneyOwed().ToString());
+        speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
+        if (speechText.text.Contains("[moneyLeft]")) {
+            speechText.text = speechText.text.Replace("[moneyLeft]", GameManager.Instance.RemainingMoneyOwed().ToString());
+        }
         EnableSpeechUI();
         npcAudioSource.clip = currentDialogueSO.GetDialogueAudio();
         npcAudioSource.Play();

@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour {
             recapUIController.EnableMainMenuButton();
         }
 
-        string[] stats = { clientsServedStat.ToString(), (5 - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString() };
+        string[] stats = { clientsServedStat.ToString(), (5 - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString(), Mathf.Max(RemainingMoneyOwed(), 0).ToString() };
         recapUIController.EnableCanvas(day, stats);
     }
 

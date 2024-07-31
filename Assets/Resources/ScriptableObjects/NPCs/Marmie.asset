@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Marmie
   m_EditorClassIdentifier: 
   npcName: Marmie
-  npcSprite: {fileID: 21300000, guid: 8a48df3f8301fdd4896dc12668929806, type: 3}
+  npcSprite: {fileID: 21300000, guid: c8f75ed900f7be94f861b36f5fb715ae, type: 3}
   associatedNPCS: []

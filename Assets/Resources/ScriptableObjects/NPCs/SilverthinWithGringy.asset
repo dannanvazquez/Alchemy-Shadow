@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SilverthinWithGringy
   m_EditorClassIdentifier: 
   npcName: Silverthin (and Gringy)
-  npcSprite: {fileID: 3286163911610860551, guid: ed63c990223681944be9c2175807a25d, type: 3}
+  npcSprite: {fileID: 21300000, guid: 6681495915a81f74496b59760f6edb2b, type: 3}
   associatedNPCS:
   - {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
   - {fileID: 11400000, guid: 0933c42a7c039cf46b7907be670f580f, type: 2}

@@ -15,9 +15,12 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: c4f8c7bcf13d1c449879ff516c9155dd, type: 2}
   _dialogueText: Oh! Really? Oh my god, see Gringy, I told you I'm just the luckiest!
     Thank you so very much!
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client5.1Accept
   _dialogues: []
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
+  - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
+  - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
+  moneyOffer: 20

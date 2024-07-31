@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
   _dialogueText: ...
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client15.1Accept
   _dialogues: []
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
+  - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
+  - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
+  moneyOffer: 20

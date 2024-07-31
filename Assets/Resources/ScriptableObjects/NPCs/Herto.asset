@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Herto
   m_EditorClassIdentifier: 
   npcName: Herto
-  npcSprite: {fileID: 21300000, guid: 4ac6283a13bcbec41a24122b59c19f9f, type: 3}
+  npcSprite: {fileID: 21300000, guid: 28f4bce039ad09f4a8c69485ede17ede, type: 3}
   associatedNPCS: []

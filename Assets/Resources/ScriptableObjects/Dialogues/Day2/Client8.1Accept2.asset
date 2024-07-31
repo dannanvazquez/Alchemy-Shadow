@@ -15,10 +15,13 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
   _dialogueText: I don't mind that I'm the sole breadwinner, but you know... It's
     tough.
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: 8d0fe4b96dcafbc4b9d3091b36a792b5, type: 2}
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
+  - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
+  - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
+  moneyOffer: 20

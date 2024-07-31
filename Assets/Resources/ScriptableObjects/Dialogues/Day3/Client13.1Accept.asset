@@ -20,5 +20,7 @@ MonoBehaviour:
   _dialogues:
   - {fileID: 11400000, guid: 4be261e75c2c7e049950f9e6c2b6e64d, type: 2}
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
+  - {fileID: 11400000, guid: 6987e36d29f84234899abefa4c6738be, type: 2}
+  - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
+  moneyOffer: 20

@@ -17,10 +17,13 @@ MonoBehaviour:
     thing happened : my wife suddenly decided I wouldn''t be allowed to invest my
     time into hustling to get us our dream house. Instead she wants me to babysit
     our kids at least twice a week... I need to convince her to give it up.'
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client14.1Accept
   _dialogues:
   - {fileID: 11400000, guid: fc0668db658d1154da2a616ea92c3eb6, type: 2}
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: 6987e36d29f84234899abefa4c6738be, type: 2}
+  - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
+  - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
+  moneyOffer: 20

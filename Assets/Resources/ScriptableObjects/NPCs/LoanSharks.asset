@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LoanSharks
   m_EditorClassIdentifier: 
   npcName: Loan Sharks
-  npcSprite: {fileID: 21300000, guid: 9f135485db188134a9aaadc44ebacaa6, type: 3}
+  npcSprite: {fileID: 21300000, guid: d698010874847da45b8023b8afd4f944, type: 3}
   associatedNPCS: []

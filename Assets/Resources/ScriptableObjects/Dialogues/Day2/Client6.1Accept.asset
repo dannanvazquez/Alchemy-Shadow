@@ -15,10 +15,13 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 269a130a60026ff49876592ecd206234, type: 2}
   _dialogueText: Great. I'm glad you accepted. I feel conflicted about drugging him,
     but it's easier than telling him his night owl activities drive me mad.
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client6.1Accept
   _dialogues:
   - {fileID: 11400000, guid: 5c2ec074cf4098144b1ac7309fa429cd, type: 2}
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
+  - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
+  - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
+  moneyOffer: 20

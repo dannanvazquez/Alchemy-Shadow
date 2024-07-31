@@ -15,10 +15,13 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: Thanks, my lovely wife is suffering from headaches. If I could take
     her pain and make it mine, I would too.
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client19.1Accept
   _dialogues:
   - {fileID: 11400000, guid: f75d59ade1bde354eba78cc88e196f97, type: 2}
   items:
-  - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 5
+  - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
+  - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
+  - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
+  moneyOffer: 20

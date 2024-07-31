@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Bruce
   m_EditorClassIdentifier: 
   npcName: Bruce
-  npcSprite: {fileID: 21300000, guid: cec3be1d3e7e13a43a6a18894c5bd8f3, type: 3}
+  npcSprite: {fileID: 21300000, guid: 27948fff89db6ad448c647bf0ba30ba3, type: 3}
   associatedNPCS: []
