@@ -15,6 +15,8 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 7b8abbbf94892d343bffcce2fe645d1f, type: 2}
   _dialogueText: Oh thank you so much! I was worried you'd turn me down, I didn't
     have it in me to wander in too many places looking for help.
+  _dialogueAudio: {fileID: 8300000, guid: a9a5a4f8b0e158844ac7a4da93be3443, type: 3}
   _inputText: Refuse
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: eda48a7ffbf52234a9a5f3963d0bfa5f, type: 2}

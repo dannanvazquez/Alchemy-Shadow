@@ -18,6 +18,7 @@ MonoBehaviour:
     happening. All I know is I had finally worked up the courage to tell my husband
     he needs to pull his weight but somehow I cannot seem to make any argument for
     it. I want to ask him to take a listening potion or something.
+  _dialogueAudio: {fileID: 8300000, guid: 265b855a39711244db4037ad6cf75f3a, type: 3}
   _inputText: True
   memoryTag: 
   _dialogues:

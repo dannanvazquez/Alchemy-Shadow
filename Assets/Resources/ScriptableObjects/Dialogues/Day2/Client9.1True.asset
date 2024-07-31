@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Hey! Thanks a lot again for last time. My throat finally started
     getting better! I did drop what you made me though... Any chance you can brew
     an other, still cannot pay just yet though.
+  _dialogueAudio: {fileID: 8300000, guid: cee068bed735eca46ae04e547083a010, type: 3}
   _inputText: True
   memoryTag: 
   _dialogues:

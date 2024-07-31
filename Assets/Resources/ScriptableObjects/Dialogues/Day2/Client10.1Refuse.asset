@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Why is everyone getting in my way? I could've sworn the people I
     bought courses from said making money would be easy and it was more of a mindset
     thing... I don't get it.
+  _dialogueAudio: {fileID: 0}
   _inputText: Refuse
   memoryTag: 
   _dialogues: []

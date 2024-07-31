@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 0}
   _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: 20b5ad17fa7fe5846ac406a613a38593, type: 2}
   - {fileID: 11400000, guid: 064ba0f8fc739fd4cb5ab958b82af0c2, type: 2}
-  minimumMoneyAmount: 10
+  minimumMoneyAmount: 200

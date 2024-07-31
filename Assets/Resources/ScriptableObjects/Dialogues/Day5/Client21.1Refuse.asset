@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
   _dialogueText: WHAT IS WRONG WITH YOU? I HATE EVERYONE BUT I HATE YOU EVEN MORE.
+  _dialogueAudio: {fileID: 8300000, guid: 7cc40e29637eb0049b31db433d70e345, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

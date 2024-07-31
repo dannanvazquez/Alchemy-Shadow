@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Hey. I was there yesterday. You refused to help out Silverthin.
     She really downplayed her symptoms and really could use some help. I cannot pay
     you yet either but I'm really working hard to finding the money.
+  _dialogueAudio: {fileID: 8300000, guid: 16e523aaa42e91b40aeaed3b5dd47d70, type: 3}
   _inputText: False
   memoryTag: 
   _dialogues:

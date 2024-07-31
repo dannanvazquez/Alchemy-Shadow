@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: I know my husband doesn't mean to be bad. But I just wish he took
     a third of his time researching business strategies to instead help around the
     house.
+  _dialogueAudio: {fileID: 8300000, guid: e601d71abc47463448cde8a47386434d, type: 3}
   _inputText: Accept
   memoryTag: 
   _dialogues:

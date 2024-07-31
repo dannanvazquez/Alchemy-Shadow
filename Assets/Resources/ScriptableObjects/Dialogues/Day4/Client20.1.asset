@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
   m_Name: Client20.1
   m_EditorClassIdentifier: 
-  _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
+  _npcSO: {fileID: 11400000, guid: 6128a3d70357db64bbebdffc04f2948a, type: 2}
   _dialogueText: Hey. Don't look at me weird, we also have needs. Listen, I need
     a potion that could make me rounder, plumper and... you know, overall cuter.
+  _dialogueAudio: {fileID: 8300000, guid: 137d3b5058c720a4a9a5cc5aba15b2a1, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

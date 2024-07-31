@@ -15,7 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 7b8abbbf94892d343bffcce2fe645d1f, type: 2}
   _dialogueText: Thanks a lot. I'm getting a bit worried about my health. If I'm
     not here for my husband, who's going to be able to take care of him?
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: 36c543d9ecee8984c84267656c2bdae4, type: 3}
   _inputText: Accept
   memoryTag: 
   _dialogues:
@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
   - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
-  moneyOffer: 20
+  moneyOffer: 35

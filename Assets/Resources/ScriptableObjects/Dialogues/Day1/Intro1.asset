@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
   _dialogueText: Stop looking at me all confused.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: 7a562afe20d4c5b4c8e4f0248e57ef76, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

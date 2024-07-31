@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: I fully get it, absolutely no harsh feelings. It's my fault it got
     shattered. I just needed to try and ask just in case, I'm still grateful for
     the first time!
+  _dialogueAudio: {fileID: 8300000, guid: 5d2b5ef83cb3eb0458e30242cfd9a993, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

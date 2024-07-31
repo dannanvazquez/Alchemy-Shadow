@@ -18,6 +18,7 @@ MonoBehaviour:
     grandson. I don't know what go in to him, but he was planning on hurting Marmie.
     Hurting her really bad. I heard your business is in trouble, but you still decided
     against serving someone. Because you know it wasn't right. Thank you.
+  _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
   _dialogues:

@@ -17,6 +17,7 @@ MonoBehaviour:
     money for both things she asked for. Silverthin has always a way of attracting
     bad situations to her. I was wondering if you had any type of lucky brewage I
     could give her.
+  _dialogueAudio: {fileID: 8300000, guid: a76e52d04fd84194db751d9feef76709, type: 3}
   _inputText: True
   memoryTag: 
   _dialogues:

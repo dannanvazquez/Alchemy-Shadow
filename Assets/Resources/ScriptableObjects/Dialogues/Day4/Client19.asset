@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: HELLO. GIVE ME A STRONG PAIN KILLER. QUICK.
+  _dialogueAudio: {fileID: 8300000, guid: 669f226adc4c6574b832ca8ab7ba35b0, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

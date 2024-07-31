@@ -15,6 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
   _dialogueText: Of course you'd refuse. Silverthin just won't hear me when I tell
     her that people are rotten from the inside out. Especially around here.
+  _dialogueAudio: {fileID: 8300000, guid: 23f79da5fbb881f4fa8c4f8737ffa9e5, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

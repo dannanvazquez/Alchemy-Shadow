@@ -15,7 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 55ad7fd6f25dc8940a2005c9e297bd8a, type: 2}
   _dialogueText: Sometimes I wonder if I could just find a way to be okay with myself,
     but then I realise it's just laziness talking and I should stop being pathetic.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: c81921541d9e7f047b067e9a735fe088, type: 3}
   _inputText: Accept
   memoryTag: 
   _dialogues:
@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
   - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
-  moneyOffer: 20
+  moneyOffer: 35

@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
-  moneyOffer: 20
+  moneyOffer: 35

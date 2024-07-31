@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: DON'T YOU KNOW CLIENTS ARE KINGS? WHAT A TERRIBLE TERRIBLE BUSINESS.
+  _dialogueAudio: {fileID: 8300000, guid: 19c5c0336dc432e4188e3e768c161070, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

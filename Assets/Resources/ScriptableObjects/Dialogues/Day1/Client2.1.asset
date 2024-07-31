@@ -17,7 +17,9 @@ MonoBehaviour:
     more trouble than usual hearing my husband and I'm scared that he's irriversably
     damaging his throat screaming his answers all day. Any chance you have something
     that could help me hear better?
+  _dialogueAudio: {fileID: 8300000, guid: 2234f9fb18d7b7e4086df2e4fad33c8d, type: 3}
   _inputText: 
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: 506d4be10fb39a84fa5a053ae14c123a, type: 2}
   - {fileID: 11400000, guid: 86436e67f5188594699e5e4464c93001, type: 2}

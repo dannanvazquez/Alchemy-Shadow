@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: My partner, Herto, seems to have trouble sleeping. I think I might
     be a bit too loud. Do you have a very gentle mixture that would help him sleep
     through my typing.
+  _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
   _dialogues:

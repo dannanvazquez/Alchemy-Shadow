@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 55ad7fd6f25dc8940a2005c9e297bd8a, type: 2}
   _dialogueText: Was I not threatening enough? Was that it?
+  _dialogueAudio: {fileID: 8300000, guid: 5ebc58a00e059364390fccd9575af780, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

@@ -19,6 +19,7 @@ MonoBehaviour:
     things. But looking through the different websites ethical statement and then
     fact checking all of them takes time. Any chance you have something REALLY STRONG
     to help with that?
+  _dialogueAudio: {fileID: 8300000, guid: dd482668de4ca9e48a7a06033b680d3f, type: 3}
   _inputText: True
   memoryTag: 
   _dialogues:

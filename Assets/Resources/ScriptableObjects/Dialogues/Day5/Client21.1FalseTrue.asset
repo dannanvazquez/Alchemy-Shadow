@@ -17,6 +17,7 @@ MonoBehaviour:
     a way to pay you the first time we came, when you turned her down. It would've
     all been better then... I don't even know that anything can fix it now. But still.
     Do you have something that could at least take her pain away?
+  _dialogueAudio: {fileID: 0}
   _inputText: True
   memoryTag: 
   _dialogues:

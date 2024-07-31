@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
   _dialogueText: Why not? Why can I never ask for help and get it? Why!!
+  _dialogueAudio: {fileID: 8300000, guid: 335f3774c6ef8c84a89917c3141a66f3, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

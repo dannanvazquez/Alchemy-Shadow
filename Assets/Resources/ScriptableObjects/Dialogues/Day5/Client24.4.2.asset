@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
   _dialogueText: DING DONG. TIME'S UP!
+  _dialogueAudio: {fileID: 8300000, guid: b6a9df8182d187744b2d14a3a072260b, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

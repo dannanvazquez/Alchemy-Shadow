@@ -15,5 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 0933c42a7c039cf46b7907be670f580f, type: 2}
   _dialogueText: Really? I'm disappointed but not surprised. We didn't really want
     <b>your help</b> anyway... Let's go Silverthin.
+  _dialogueAudio: {fileID: 8300000, guid: 0e1a6d32b46f9da4b83f59de13fd5c80, type: 3}
   _inputText: Refuse
+  memoryTag: 
   _dialogues: []

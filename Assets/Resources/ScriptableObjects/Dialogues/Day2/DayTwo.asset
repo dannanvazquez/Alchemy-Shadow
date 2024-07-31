@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Hi! I heard I could probably find someone to help me here. I'm having
     trouble sleeping, my partner makes too much noise. Do you have a potion capable
     of knocking out cold just about anything alive?
+  _dialogueAudio: {fileID: 8300000, guid: d465283b49e1abd4cad218fee806fc4d, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

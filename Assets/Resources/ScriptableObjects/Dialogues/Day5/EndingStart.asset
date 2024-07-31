@@ -15,6 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
   _dialogueText: I wonder how much money you managed to scramble with your pathetic
     sham of a business. Let's see.
+  _dialogueAudio: {fileID: 8300000, guid: 010d014412eb57449941795dd04c2f5c, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

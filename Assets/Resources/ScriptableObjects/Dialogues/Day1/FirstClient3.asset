@@ -16,7 +16,9 @@ MonoBehaviour:
   _dialogueText: Anyway. I'm in a hurry. I'm a very successfull business man. I just
     need a little something to make sure that people around me ''know'' that I'm
     a successfull business man. Can you make something like that?
+  _dialogueAudio: {fileID: 8300000, guid: a02209a45cf51c7469c12df9b6dd3b6c, type: 3}
   _inputText: 
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: 6cabf520a5b701a4a959514b412f5790, type: 2}
   - {fileID: 11400000, guid: c3a81c458e7ff624f9b6c8dd5e9eef29, type: 2}

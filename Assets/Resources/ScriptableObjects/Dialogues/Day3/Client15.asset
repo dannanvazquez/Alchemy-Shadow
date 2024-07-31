@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
   _dialogueText: Do you have anything undetectable capable of inducing a coma?
+  _dialogueAudio: {fileID: 8300000, guid: 822ba5441bc4fdb45b4afe9fd890e6b6, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

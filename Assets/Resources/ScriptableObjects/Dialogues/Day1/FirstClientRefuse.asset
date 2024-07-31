@@ -16,6 +16,8 @@ MonoBehaviour:
   _dialogueText: Oh... I guess you know nothing about business. You know from what
     I heard, you really shouldn't be turning down customers. But why would you listen
     to the most successfull entrepreneur in the neighbourhood, right?
+  _dialogueAudio: {fileID: 8300000, guid: 964686659fc5ad9419700aa66c2c3bdb, type: 3}
   _inputText: Refuse
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: 0bd5c48ef66e241478e95a7d6ab76d3e, type: 2}

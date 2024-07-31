@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Hello! I'm having a hard time taking care of all my kids. And my
     husband. I was wondering if you had anything that could help me out with getting
     more energy?
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   _dialogues:

@@ -15,6 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
   _dialogueText: Hey! It might really shock you but. I'm looking for a potion that
     helps people... being convinced of just about anything. Is that even possible?
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   _dialogues:

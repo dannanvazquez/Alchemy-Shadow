@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a1696767b4ba45d41b70751dd101b87b, type: 2}
   _dialogueText: Guess my needs wouldn't profit your business enough, huh?
+  _dialogueAudio: {fileID: 8300000, guid: be815941d81b6614e906f1efbc61ce39, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

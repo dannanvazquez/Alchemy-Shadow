@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a1696767b4ba45d41b70751dd101b87b, type: 2}
   _dialogueText: Hello. Do you have anything that'd help me stay up?
+  _dialogueAudio: {fileID: 8300000, guid: 7fdd713d71b20964eb8fdb229dbd48cf, type: 3}
   _inputText: 
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: dc9cfb8cf2109904a9d857e5dc2d49e7, type: 2}
   - {fileID: 11400000, guid: f50047c0edc3c2f4baf2ac959d9231da, type: 2}

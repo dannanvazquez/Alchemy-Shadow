@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: Why not? I know that sedating my partner MIGHT feel like it's wrong
     but how am I supposed to save our relationship otherwise? Relationships are about
     compromise after all! I'm compromising my morals so we can stay together.
+  _dialogueAudio: {fileID: 8300000, guid: 99f52020280c38047bc4ae4d373f4477, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

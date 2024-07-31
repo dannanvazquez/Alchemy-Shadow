@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: ANYWAY. I NEED SOMETHING VERY EASY. SOMEONE LIKE YOU SHOULDN'T HAVE
     TROUBLE WITH IT! Ahem... I want something that can make my voice be louder without
     putting more strain on it. Do you have that?
+  _dialogueAudio: {fileID: 8300000, guid: 68881d03758b68540bf791e59ff473ae, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

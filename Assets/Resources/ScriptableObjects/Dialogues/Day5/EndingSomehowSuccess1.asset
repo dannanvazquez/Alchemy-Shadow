@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: I mean. It's not like I had any expectations of you actually making
     it. Your type of business is entirely built on people's misery. And no, it's
     not ironic that we're saying that...
+  _dialogueAudio: {fileID: 8300000, guid: a02fb058b610f7043b73dc0875e5d667, type: 3}
   _inputText: True
   memoryTag: 
   _dialogues:

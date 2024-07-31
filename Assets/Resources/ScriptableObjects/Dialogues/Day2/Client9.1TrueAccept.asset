@@ -15,7 +15,7 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 558e9fd48b1d9fb47b82747da1224f1f, type: 2}
   _dialogueText: I keep telling Gringy that people are good, you just need to give
     the the opportunity to show you. I really appreciate what you're doing.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: a33be02695979954eb9373dca8d857e7, type: 3}
   _inputText: Accept
   memoryTag: Client9.1Accept
   _dialogues:
@@ -24,4 +24,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
-  moneyOffer: 20
+  moneyOffer: 35

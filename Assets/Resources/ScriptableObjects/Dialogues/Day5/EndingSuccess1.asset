@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
   _dialogueText: I'm... having trouble believing this. You... actually made it?
+  _dialogueAudio: {fileID: 8300000, guid: acd0d2acfde357a4198d06db0dfe9d0c, type: 3}
   _inputText: True
   memoryTag: 
   _dialogues:

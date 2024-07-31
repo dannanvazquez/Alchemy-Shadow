@@ -17,6 +17,7 @@ MonoBehaviour:
     pleased to see your business absolutely boom! Or that's what I heard, I mean
     from what I can still hear that is. I've been having some headaches lately. Any
     chance you have something to help cope with the pain?
+  _dialogueAudio: {fileID: 8300000, guid: a0d3f05d312dd064c85afb6a56eeec72, type: 3}
   _inputText: 
   memoryTag: 
   _dialogues:

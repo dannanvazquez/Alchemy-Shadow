@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a1696767b4ba45d41b70751dd101b87b, type: 2}
   _dialogueText: Guess small requests don't make you enough money, huh?
+  _dialogueAudio: {fileID: 8300000, guid: d210a4d4b68212f43a10a641536ae691, type: 3}
   _inputText: Refuse
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: a0f52a6d47d2fc4499a70a68573be8cc, type: 2}

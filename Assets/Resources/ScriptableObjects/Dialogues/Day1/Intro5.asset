@@ -17,6 +17,8 @@ MonoBehaviour:
     for help and then ultimately, we have to pay for your inability to be realistic... 
     Don''t you think that if you were meant to be something or someone, that it''d
     have happened by now? '
+  _dialogueAudio: {fileID: 8300000, guid: 03a28a0f02a7cc643bbb1bb3e46538c8, type: 3}
   _inputText: 
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: 4e261017a7ca27241ac1382bed2658a1, type: 2}

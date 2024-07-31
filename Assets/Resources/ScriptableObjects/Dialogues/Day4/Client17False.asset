@@ -17,6 +17,7 @@ MonoBehaviour:
     hardworking man, in the funniest way. I am lately having trouble with laughing
     through his attempts at avoiding being a dad. Got anything to help him realise
     his duty as my husband and a father?
+  _dialogueAudio: {fileID: 8300000, guid: 4ea4eba2b4491144d901c653f86e39b6, type: 3}
   _inputText: False
   memoryTag: 
   _dialogues:

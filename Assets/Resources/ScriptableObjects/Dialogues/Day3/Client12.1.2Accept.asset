@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogueText: THANKS! I DON'T MIND RAISING MY VOICE FOR HER. But I am scared at
     this rhythm, I won't be able to keep on doing it much longer. AND I CANNOT ALLOW
     THAT.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: 4c232af0c6613db4da8bc2a992c28150, type: 3}
   _inputText: Accept
   memoryTag: 
   _dialogues:
@@ -25,4 +25,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
   - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
-  moneyOffer: 20
+  moneyOffer: 35

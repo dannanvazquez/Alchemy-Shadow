@@ -17,6 +17,7 @@ MonoBehaviour:
     TO TURN ME DOWN THE OTHER DAY, Marmie- My dear Marmie is not waking up. MAKE
     ME SOMETHING THAT REVERSE WHATEVER DISGUSTING THING YOU BREWED TO HURT HER. AND
     QUICK. AND DON'T EXPECT ME TO PAY YOU FOR THAT.
+  _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
   _dialogues:

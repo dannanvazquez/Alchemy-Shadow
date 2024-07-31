@@ -16,6 +16,7 @@ MonoBehaviour:
   _dialogueText: GO FUCK YOURSELF! YOU, AND YOUR BUSINESS, AND HIS BUSINESS AND EVERYBODY'S
     FUCKING BUSINESS. I'M TIRED OF THE GREED. I'M TIRED OF THE LIES. AND I'M TIRED
     OF ACTING LIKE I'M NOT TIRED OF IT ALL. FUCK YOU, FUCK YOU, FUCK YOU.
+  _dialogueAudio: {fileID: 8300000, guid: 9c97ffab906c6a14bbd3d58b64c1fb75, type: 3}
   _inputText: Refuse
   memoryTag: 
   _dialogues:

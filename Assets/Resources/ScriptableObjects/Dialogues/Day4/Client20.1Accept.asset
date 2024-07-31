@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b39fb437574d441a11732f7b7763d8, type: 3}
   m_Name: Client20.1Accept
   m_EditorClassIdentifier: 
-  _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
+  _npcSO: {fileID: 11400000, guid: 6128a3d70357db64bbebdffc04f2948a, type: 2}
   _dialogueText: Thank you! I know we seem very different you and I, but you cannot
     even begin to imagine the type of pressure exists for us. If you're slightly
     less, adorable as they'd say, you're directly casted off- I mean, I guess you
     might be able to get it.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: f1f24725d34b4074f9d52acfaef6229c, type: 3}
   _inputText: Accept
   memoryTag: 
   _dialogues:
@@ -26,4 +26,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
-  moneyOffer: 20
+  moneyOffer: 35

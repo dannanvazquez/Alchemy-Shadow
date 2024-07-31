@@ -16,6 +16,8 @@ MonoBehaviour:
   _dialogueText: I mean, we're here early, you still have 5 days. But just taking
     a look at your face I have a feeling you're going to prove me right. Like they
     always do. I-
+  _dialogueAudio: {fileID: 8300000, guid: ba66aee4f1db2da4ab67fe0a07f51f0f, type: 3}
   _inputText: 
+  memoryTag: 
   _dialogues:
   - {fileID: 11400000, guid: cc2d367bf30e1a9479fa4795e21485bf, type: 2}

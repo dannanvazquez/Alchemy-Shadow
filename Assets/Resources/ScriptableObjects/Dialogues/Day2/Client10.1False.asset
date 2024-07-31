@@ -18,6 +18,7 @@ MonoBehaviour:
     right on their lap. You do know that if you make me a confidence potion, that
     means more clients come my way and I then spend more money to get that sweet
     little juice of yours.
+  _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
   _dialogues:
