@@ -6,6 +6,7 @@ public class ItemController : MonoBehaviour {
     [SerializeField] private ItemSO itemSO;
     [SerializeField] private Canvas nameCanvas;
     [SerializeField] private TMP_Text nameText;
+    [SerializeField] private AudioSource hoverAudio;
 
     private bool _isSelected = false;
 
@@ -15,10 +16,12 @@ public class ItemController : MonoBehaviour {
 
     void OnMouseEnter() {
         nameCanvas.enabled = true;
+        hoverAudio.Play();
     }
 
     void OnMouseExit() {
         nameCanvas.enabled = false;
+        hoverAudio.Stop();
     }
 
     void OnMouseDown() {
