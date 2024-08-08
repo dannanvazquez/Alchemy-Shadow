@@ -60,6 +60,7 @@ public class NPCController : MonoBehaviour {
         speechCanvas.enabled = false;
         speechSprite.enabled = false;
         choiceCanvas.enabled = false;
+        npcAudioSource.Stop();
 
         GameManager.Instance.EnableRecap();
     }
@@ -112,6 +113,9 @@ public class NPCController : MonoBehaviour {
 
         // Wait for input to continue
         yield return clickAnywhereController.AwaitInputCoroutine();
+
+        npcAudioSource.Stop();
+        GameManager.Instance.ChangeMoney(currentDialogueSO.GetMoneyAmount());
 
         // Get the next dialogue
         if (currentDialogueSO.HasManyPaths()) {

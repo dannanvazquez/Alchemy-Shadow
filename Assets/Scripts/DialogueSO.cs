@@ -8,6 +8,7 @@ public class DialogueSO : ScriptableObject {
     [SerializeField] private AudioClip _dialogueAudio;
     [SerializeField] private string _inputText;
     [SerializeField] private string memoryTag;
+    [SerializeField] private int giveMoney;
     [SerializeField] private DialogueSO[] _dialogues;
 
     public NPCSO GetNPC() { return _npcSO; }
@@ -20,6 +21,7 @@ public class DialogueSO : ScriptableObject {
 
     public bool HasMemoryTag() { return memoryTag != string.Empty; }
     public string GetMemoryTag() { return memoryTag; }
+    public int GetMoneyAmount() {  return giveMoney; }
 
     public virtual bool DoesInitiateCrafting() { return false; }
     public virtual bool IsConditionalTag() { return false; }

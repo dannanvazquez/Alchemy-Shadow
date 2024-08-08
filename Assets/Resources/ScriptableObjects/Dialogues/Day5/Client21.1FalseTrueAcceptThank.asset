@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f558266dc4b3640a8653f69d4c948f, type: 3}
+  m_Name: Client21.1FalseTrueAcceptThank
+  m_EditorClassIdentifier: 
+  _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
+  _dialogueText: It's not much but it's what I could find...
+  _dialogueAudio: {fileID: 0}
+  _inputText: 
+  memoryTag: 
+  giveMoney: 10
+  _dialogues:
+  - {fileID: 11400000, guid: 357a62484a2796c479b9a200b2192244, type: 2}

@@ -25,6 +25,11 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private DialogueSO[] startingDialogueDays;
 
+    [SerializeField] private AudioSource moneyUpAudio;
+    [SerializeField] private AudioSource moneyDownAudio;
+    [SerializeField] private GameObject moneyChangeUIPrefab;
+    [SerializeField] private Vector3 moneyChangeSpawnPosition;
+
     [Header("Settings")]
     [Tooltip("The amount of money the player starts with.")]
     [SerializeField] private int startingMoney;
@@ -121,7 +126,7 @@ public class GameManager : MonoBehaviour {
                         notepadCanvas.enabled = false;
                         notepadSprite.enabled = false;
 
-                        AddMoney(craftingDialogueSO.moneyOffer);
+                        ChangeMoney(craftingDialogueSO.GetMoneyAmount());
 
                         isSelectingItems = false;
                         DisableAllItemSelections();
@@ -169,6 +174,9 @@ public class GameManager : MonoBehaviour {
         money -= price;
         moneyText.text = "$" + money;
         moneySpentStat += price;
+        moneyDownAudio.Play();
+        GameObject moneyChangeUIGO = Instantiate(moneyChangeUIPrefab, moneyChangeSpawnPosition, Quaternion.identity);
+        moneyChangeUIGO.GetComponent<MoneyChangeUIController>().MoneyDown(price);
     }
 
     private void RefundItem(int price) {
@@ -177,6 +185,9 @@ public class GameManager : MonoBehaviour {
         money += price;
         moneyText.text = "$" + money;
         moneySpentStat -= price;
+        moneyUpAudio.Play();
+        GameObject moneyChangeUIGO = Instantiate(moneyChangeUIPrefab, moneyChangeSpawnPosition, Quaternion.identity);
+        moneyChangeUIGO.GetComponent<MoneyChangeUIController>().MoneyUp(price);
     }
 
     public void AddMoney(int addedMoney) {
@@ -184,9 +195,26 @@ public class GameManager : MonoBehaviour {
         moneyText.text = "$" + money;
         moneyEarnedStat += addedMoney;
         clientsServedStat++;
+        moneyUpAudio.Play();
+        GameObject moneyChangeUIGO = Instantiate(moneyChangeUIPrefab, moneyChangeSpawnPosition, Quaternion.identity);
+        moneyChangeUIGO.GetComponent<MoneyChangeUIController>().MoneyUp(addedMoney);
     }
 
     public bool IsEnoughMoney(int amount) { return amount >= money; }
 
     public int RemainingMoneyOwed() { return moneyOwed - money; }
+
+    public void ChangeMoney(int moneyAmount) {
+        if (moneyAmount == 0) return;
+
+        if (moneyAmount < 0) {
+            money += moneyAmount;
+            moneyText.text = "$" + money;
+            moneyUpAudio.Play();
+            GameObject moneyChangeUIGO = Instantiate(moneyChangeUIPrefab, moneyChangeSpawnPosition, Quaternion.identity);
+            moneyChangeUIGO.GetComponent<MoneyChangeUIController>().MoneyUp(moneyAmount);
+        } else {
+            AddMoney(moneyAmount);
+        }
+    }
 }

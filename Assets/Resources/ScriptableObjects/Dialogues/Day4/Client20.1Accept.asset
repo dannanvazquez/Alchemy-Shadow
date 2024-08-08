@@ -20,10 +20,10 @@ MonoBehaviour:
   _dialogueAudio: {fileID: 8300000, guid: f1f24725d34b4074f9d52acfaef6229c, type: 3}
   _inputText: Accept
   memoryTag: 
+  giveMoney: 0
   _dialogues:
-  - {fileID: 11400000, guid: d436b854e0324cd468a56c12b3d74156, type: 2}
+  - {fileID: 11400000, guid: 211f3b92e5a1e784f81c97250976cd69, type: 2}
   items:
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}
-  moneyOffer: 35
