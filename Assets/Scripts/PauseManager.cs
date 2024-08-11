@@ -4,8 +4,8 @@ using UnityEngine.Audio;
 public class PauseManager : MonoBehaviour {
     [Header("References")]
     [SerializeField] private Canvas optionsCanvas;
-    [SerializeField] private AudioMixerSnapshot pausedMixerSnapshot;
-    [SerializeField] private AudioMixerSnapshot unpausedMixerSnapshot;
+    [SerializeField] private AudioSource unpausedMusicAudio;
+    [SerializeField] private AudioSource pausedMusicAudio;
     [SerializeField] private AudioSource[] pausedAudioSources;
 
     [Header("Settings")]
@@ -30,11 +30,8 @@ public class PauseManager : MonoBehaviour {
     }
 
     private void Lowpass() {
-        if (isPaused) {
-            pausedMixerSnapshot.TransitionTo(snapshotTransitionTime);
-        } else {
-            unpausedMixerSnapshot.TransitionTo(snapshotTransitionTime);
-        }
+        unpausedMusicAudio.mute = isPaused;
+        pausedMusicAudio.mute = !isPaused;
     }
 
     private void MuteAudioSources() {

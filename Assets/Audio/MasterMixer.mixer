@@ -13,7 +13,7 @@ AudioMixerSnapshotController:
     dad32990853f1f64eae6c04b13dbfc7f: -0.08374883
     450c72e1951177a419a1fff6bdfd9760: -6
     5ee498634ac67ea4cac7ff2b18422b19: 0
-    88111ec4c0616804c95fa40cee7e2fe0: -35
+    88111ec4c0616804c95fa40cee7e2fe0: -20
     31df6706b8b62c440a3d1733dbab062e: -6
     1e22463654ba8d746b0ba672fdaf1b5a: -6
     6af868883cf1ae345a9c8c753fa30c68: 1
@@ -125,7 +125,7 @@ AudioMixerController:
   - guid: 31df6706b8b62c440a3d1733dbab062e
     name: sfxVolume
   - guid: 1e22463654ba8d746b0ba672fdaf1b5a
-    name: MyExposedParam
+    name: voVolume
   m_AudioMixerGroupViews:
   - guids:
     - 390b307543eeccb45a65088f775b4524
@@ -134,7 +134,7 @@ AudioMixerController:
     - ace7b0560f6c15c4b8ca5f3a6ec127e9
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 24500006}
+  m_TargetSnapshot: {fileID: -7939471262521284671}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ AudioMixerSnapshotController:
     dad32990853f1f64eae6c04b13dbfc7f: -0.08374883
     450c72e1951177a419a1fff6bdfd9760: -6
     5ee498634ac67ea4cac7ff2b18422b19: 0
-    88111ec4c0616804c95fa40cee7e2fe0: -35
+    88111ec4c0616804c95fa40cee7e2fe0: -20
     31df6706b8b62c440a3d1733dbab062e: -6
     1e22463654ba8d746b0ba672fdaf1b5a: -6
     bed2ef6d58a844e4eb195ed48c4cccf9: 0
