@@ -111,13 +111,7 @@ public class NPCController : MonoBehaviour {
         npcAudioSource.clip = currentDialogueSO.GetDialogueAudio();
         npcAudioSource.Play();
 
-        // Wait for input to continue
-        yield return clickAnywhereController.AwaitInputCoroutine();
-
-        npcAudioSource.Stop();
-        GameManager.Instance.ChangeMoney(currentDialogueSO.GetMoneyAmount());
-
-        // Get the next dialogue
+        // Wait for input to continue to the next dialogue
         if (currentDialogueSO.HasManyPaths()) {
             while (choiceCanvas.transform.childCount > 0) {
                 Destroy(choiceCanvas.transform.GetChild(0).gameObject);
@@ -137,14 +131,19 @@ public class NPCController : MonoBehaviour {
                 choiceText.text = input;
             }
 
-            EnableChoiceUI();
+            choiceCanvas.enabled = true;
         } else {
+            yield return clickAnywhereController.AwaitInputCoroutine();
+
             SelectNextDialogue();
         }
     }
 
     public void SelectNextDialogue(string choice = "") {
         currentDialogueSO = currentDialogueSO.GetNextDialogue(choice);
+
+        npcAudioSource.Stop();
+        GameManager.Instance.ChangeMoney(currentDialogueSO.GetMoneyAmount());
 
         if (currentDialogueSO != null) {
             StartCoroutine(InitializeDialogueCoroutine());
