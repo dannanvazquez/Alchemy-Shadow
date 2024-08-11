@@ -1,26 +1,25 @@
-using TMPro;
 using UnityEngine;
 
 public class ItemController : MonoBehaviour {
     [Header("References")]
     [SerializeField] private ItemSO itemSO;
-    [SerializeField] private Canvas nameCanvas;
-    [SerializeField] private TMP_Text nameText;
     [SerializeField] private AudioSource hoverAudio;
 
     private bool _isSelected = false;
 
-    private void Awake() {
-        nameText.text = $"{itemSO.itemName} (${itemSO.price})";
-    }
-
     void OnMouseEnter() {
-        nameCanvas.enabled = true;
+        ItemHoverUIController.Instance.EnableUI(itemSO);
         hoverAudio.Play();
     }
 
+    void OnMouseOver() {
+        var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorldPos.z = 0f;
+        ItemHoverUIController.Instance.UpdatePosition(mouseWorldPos);
+    }
+
     void OnMouseExit() {
-        nameCanvas.enabled = false;
+        ItemHoverUIController.Instance.DisableUI();
         hoverAudio.Stop();
     }
 

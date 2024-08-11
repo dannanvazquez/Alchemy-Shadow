@@ -15,8 +15,9 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 5659f3e2e6903094298c78f19f902015, type: 2}
   _dialogueText: Too ambitious with their plans. Delusional. I really despise your
     kind.
-  _dialogueAudio: {fileID: 8300000, guid: 86b53b4c92e4fff44a3a5b09e90bc2e2, type: 3}
+  _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: d63eb3f0d9c46bb478329466a6fb070d, type: 2}
