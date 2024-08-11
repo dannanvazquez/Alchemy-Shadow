@@ -4,11 +4,13 @@ public class ItemController : MonoBehaviour {
     [Header("References")]
     [SerializeField] private ItemSO itemSO;
     [SerializeField] private AudioSource hoverAudio;
+    [SerializeField] private SpriteRenderer itemGlowSprite;
 
     private bool _isSelected = false;
 
     void OnMouseEnter() {
         ItemHoverUIController.Instance.EnableUI(itemSO);
+        itemGlowSprite.enabled = true;
         hoverAudio.Play();
     }
 
@@ -20,6 +22,7 @@ public class ItemController : MonoBehaviour {
 
     void OnMouseExit() {
         ItemHoverUIController.Instance.DisableUI();
+        itemGlowSprite.enabled = false;
         hoverAudio.Stop();
     }
 
