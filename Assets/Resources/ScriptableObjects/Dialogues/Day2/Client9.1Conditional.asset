@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 0}
   _dialogueText: 
-  _inputText: 
+  _dialogueAudio: {fileID: 0}
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 2a0c303f4b562134296e00868412233e, type: 2}
   - {fileID: 11400000, guid: 2bf885e5247d70940a09b50da8a65c82, type: 2}

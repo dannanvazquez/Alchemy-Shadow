@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client9.1TrueAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 558e9fd48b1d9fb47b82747da1224f1f, type: 2}
-  _dialogueText: Thank you so much. I'll pay you as soon as she's better.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: I keep telling Gringy that people are good, you just need to give
+    the the opportunity to show you. I really appreciate what you're doing.
+  _dialogueAudio: {fileID: 8300000, guid: a33be02695979954eb9373dca8d857e7, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 0
   _dialogues:

@@ -17,8 +17,9 @@ MonoBehaviour:
     husband. I was wondering if you had anything that could help me out with getting
     more energy?
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 9b43198a7c68d4c46b06bdbdd5b803a9, type: 2}
   - {fileID: 11400000, guid: 83aa1f090db8a994284e0d273dd32c5e, type: 2}

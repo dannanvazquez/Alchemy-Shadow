@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Client21.1TrueTrueAccept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
-  _dialogueText: It's funny, for an unlucky woman, she's the luckiest thing that
-    happened to me. HUM. I mean because it, like, gets me out of the house, and entertains
-    me, and stuff...
+  _dialogueText: 
   _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 27487409853e2f54a9f10f276edd5ae1, type: 2}
+  - {fileID: 11400000, guid: 177f49e8d36e618418bb5b8f63d0dddd, type: 2}
   items:
   - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
   - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}

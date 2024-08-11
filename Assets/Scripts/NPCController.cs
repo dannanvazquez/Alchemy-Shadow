@@ -69,6 +69,7 @@ public class NPCController : MonoBehaviour {
         npcAudioSource.Stop();
         speechCanvas.enabled = false;
         speechSprite.enabled = false;
+        choiceCanvas.enabled = false;
 
         // Add memory tag for future conditionals.
         if (currentDialogueSO.HasMemoryTag()) {
@@ -92,6 +93,12 @@ public class NPCController : MonoBehaviour {
             yield break;
         }
 
+        // Check if this is a dialogue that you craft at.
+        if (currentDialogueSO.DoesInitiateCrafting()) {
+            GameManager.Instance.EnableCrafting();
+            yield break;
+        }
+
         // Initial dialogue
         NPCSO npcSO = currentDialogueSO.GetNPC();
         yield return StartCoroutine(SwitchNpcSpriteCoroutine(npcSO));
@@ -103,13 +110,6 @@ public class NPCController : MonoBehaviour {
         EnableSpeechUI();
         npcAudioSource.clip = currentDialogueSO.GetDialogueAudio();
         npcAudioSource.Play();
-
-
-        // Check if this is a dialogue that you craft at.
-        if (currentDialogueSO.DoesInitiateCrafting()) {
-            GameManager.Instance.EnableCrafting();
-            yield break;
-        }
 
         // Wait for input to continue
         yield return clickAnywhereController.AwaitInputCoroutine();

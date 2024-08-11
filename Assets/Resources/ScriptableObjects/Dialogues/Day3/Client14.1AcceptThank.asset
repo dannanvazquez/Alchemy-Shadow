@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Client14.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
-  _dialogueText: Thanks! Here you go!
+  _dialogueText: 'You might think it''s for my business but actually, the craziest
+    thing happened : my wife suddenly decided I wouldn''t be allowed to invest my
+    time into hustling to get us our dream house. Instead she wants me to babysit
+    our kids at least twice a week... I need to convince her to give it up.'
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

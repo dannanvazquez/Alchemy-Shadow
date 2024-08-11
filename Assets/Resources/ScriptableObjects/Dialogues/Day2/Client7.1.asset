@@ -16,8 +16,9 @@ MonoBehaviour:
   _dialogueText: Hello. I was wondering if- No. I demand it. I want a height enhancing
     brewage... please.
   _dialogueAudio: {fileID: 8300000, guid: 9e9eeb3777049d94597ae3da8d2f2d99, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: cd03c3222c4954f41b84e836cc5b8b06, type: 2}
   - {fileID: 11400000, guid: 404ea38533b527d449f1b6564c51a017, type: 2}

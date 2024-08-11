@@ -15,8 +15,9 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
   _dialogueText: Do you have anything undetectable capable of inducing a coma?
   _dialogueAudio: {fileID: 8300000, guid: 822ba5441bc4fdb45b4afe9fd890e6b6, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: cb39e8424533714428a6627fc11f405e, type: 2}
   - {fileID: 11400000, guid: 07d3793d34b12144da441474e8d4d9ff, type: 2}

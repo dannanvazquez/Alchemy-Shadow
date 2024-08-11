@@ -1367,7 +1367,7 @@ MonoBehaviour:
   choiceCanvas: {fileID: 824922912}
   choiceButtonPrefab: {fileID: 6587968185795647203, guid: 23fa9935fa8b1c240a382438ef0408f5, type: 3}
   clickAnywhereController: {fileID: 422283421}
-  transitionTime: 0.5
+  transitionTime: 1
 --- !u!82 &447591150
 AudioSource:
   m_ObjectHideFlags: 0

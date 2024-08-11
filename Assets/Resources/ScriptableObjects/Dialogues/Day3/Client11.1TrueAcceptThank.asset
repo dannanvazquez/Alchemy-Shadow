@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Client11.1TrueAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a1696767b4ba45d41b70751dd101b87b, type: 2}
-  _dialogueText: Thank you!
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: My partner's and I's anniversary is coming up and I've been trying
+    to sneakily order some things. He seems to think because I never buy him things
+    that I don't care but looking through the different ethical statements of the
+    different shops along with then fact checking all of them takes time. But I love
+    him, I really do.
+  _dialogueAudio: {fileID: 8300000, guid: 09c3e2e427ea4544dbfe48659e4b8ebe, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

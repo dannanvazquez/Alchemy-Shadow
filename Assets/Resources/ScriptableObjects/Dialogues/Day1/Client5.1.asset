@@ -17,8 +17,9 @@ MonoBehaviour:
     might not be able to pay you. I was wondering if there was any chance you could
     make me something to take my throat pain away, just this one time?
   _dialogueAudio: {fileID: 8300000, guid: 73e77cb933f29fa48b1085854b11f200, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: e3886fc599e037a4c8f59849a1758c1d, type: 2}
   - {fileID: 11400000, guid: aba2980b578c24244bd0f82b187b9472, type: 2}

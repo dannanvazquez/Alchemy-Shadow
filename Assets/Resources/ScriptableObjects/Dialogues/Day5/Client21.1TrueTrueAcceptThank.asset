@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Client21.1TrueTrueAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
-  _dialogueText: Thank you so much.
+  _dialogueText: It's funny, for an unlucky woman, she's the luckiest thing that
+    happened to me. HUM. I mean because it, like, gets me out of the house, and entertains
+    me, and stuff...
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

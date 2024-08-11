@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client18.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 55ad7fd6f25dc8940a2005c9e297bd8a, type: 2}
-  _dialogueText: Thank you...
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: Sometimes I wonder if I could just find a way to be okay with myself,
+    but then I realise it's just laziness talking and I should stop being pathetic.
+  _dialogueAudio: {fileID: 8300000, guid: c81921541d9e7f047b067e9a735fe088, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

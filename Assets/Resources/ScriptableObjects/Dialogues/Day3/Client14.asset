@@ -16,8 +16,9 @@ MonoBehaviour:
   _dialogueText: Hey! It might really shock you but. I'm looking for a potion that
     helps people... being convinced of just about anything. Is that even possible?
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 3ec512d50eaf3a840820eb53469c33da, type: 2}
   - {fileID: 11400000, guid: 3a704f88a92b8f444945c0f1b4b8fcdb, type: 2}

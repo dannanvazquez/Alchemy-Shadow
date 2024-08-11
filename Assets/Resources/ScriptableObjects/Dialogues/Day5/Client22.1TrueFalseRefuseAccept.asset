@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Client22.1TrueFalseRefuseAccept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
-  _dialogueText: I miss hearing her laugh...
-  _dialogueAudio: {fileID: 8300000, guid: fdc6d6fd81563194bb3d67adabc15ef1, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 7c3fe8f440ce6a54ea26e492eeb44706, type: 2}
+  - {fileID: 11400000, guid: d91310496894ce6499522bedac26b21b, type: 2}
   items:
   - {fileID: 11400000, guid: 6987e36d29f84234899abefa4c6738be, type: 2}
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}

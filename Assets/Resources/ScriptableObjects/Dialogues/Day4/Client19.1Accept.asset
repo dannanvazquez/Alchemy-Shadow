@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Client19.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
-  _dialogueText: Thanks, my lovely wife is suffering from headaches. If I could take
-    her pain and make it mine, I would too.
-  _dialogueAudio: {fileID: 8300000, guid: b6fd139b726fb384a8dd13264dc1aabe, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client19.1Accept
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 50bdacc954cab0d49bc0b7a6143bade1, type: 2}
+  - {fileID: 11400000, guid: f75d59ade1bde354eba78cc88e196f97, type: 2}
   items:
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}

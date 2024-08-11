@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Client10.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
-  _dialogueText: Great. I wonder just how far I could theoretically push it. I mean
-    if they were to trust just about ANYTHING.
+  _dialogueText: 
   _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client10.1Accept
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 53299182b7d77d7418cdcf1696a35e3f, type: 2}
+  - {fileID: 11400000, guid: c98e35f1d82770447bceb0f49d0d4e59, type: 2}
   items:
   - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}

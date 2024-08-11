@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Client15.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
-  _dialogueText: ...
+  _dialogueText: 
   _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client15.1Accept
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 509864b2b9946b344b0a2ff1c0d9958a, type: 2}
+  - {fileID: 11400000, guid: 9a3f4405fc2a6ca40b650e16f15881e5, type: 2}
   items:
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}

@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Client9.1FalseAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
-  _dialogueText: Thank you. I'll be sure to pay you back soon.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: I'm so relieved. It's so hard for me to see her sick like this.
+    I mean it's not like I actually care about her, it's just that when she's sick,
+    she's no fun... I just want .
+  _dialogueAudio: {fileID: 8300000, guid: 57327d6bd222e44419fe2fb5fbc6be26, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 0
   _dialogues:

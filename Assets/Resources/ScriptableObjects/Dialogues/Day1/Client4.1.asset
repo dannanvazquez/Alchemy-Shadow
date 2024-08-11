@@ -18,8 +18,9 @@ MonoBehaviour:
     they go, it usually means trouble. Is there anything I could buy from you to
     help out?
   _dialogueAudio: {fileID: 8300000, guid: 3d10f7f44d3ef0943aaaedcc7facc387, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 641649309af5353408bd0254d8fa004a, type: 2}
   - {fileID: 11400000, guid: 951f00c7661f89744940b13e77a64d4b, type: 2}

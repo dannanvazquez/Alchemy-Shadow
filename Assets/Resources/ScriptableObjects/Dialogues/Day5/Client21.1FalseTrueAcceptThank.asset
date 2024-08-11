@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client21.1FalseTrueAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
-  _dialogueText: It's not much but it's what I could find...
+  _dialogueText: I'm so incredibly resentful, but I'll keep my anger down for now.
+    This better help fix things. I would be ashamed if I was you.
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Successful
   memoryTag: 
   giveMoney: 10
   _dialogues:

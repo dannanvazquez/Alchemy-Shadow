@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client6.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 269a130a60026ff49876592ecd206234, type: 2}
-  _dialogueText: Thank you! I'll lay here what I owe you.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: Great. I'm glad you accepted. I feel conflicted about drugging him,
+    but it's easier than telling him his night owl activities drive me mad.
+  _dialogueAudio: {fileID: 8300000, guid: f83b41013f124ea47a5fcb1ecdb9b217, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

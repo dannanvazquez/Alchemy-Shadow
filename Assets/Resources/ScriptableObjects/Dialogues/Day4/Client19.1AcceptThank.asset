@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client19.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
-  _dialogueText: Here you go.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: Thanks, my lovely wife is suffering from headaches. If I could take
+    her pain and make it mine, I would too.
+  _dialogueAudio: {fileID: 8300000, guid: b6fd139b726fb384a8dd13264dc1aabe, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

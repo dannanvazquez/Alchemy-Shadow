@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Client4.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 4c01f2b93efc06246b33a139bd866975, type: 2}
-  _dialogueText: Lovely! My name's Charlie by the way. Happy to help!
-  _dialogueAudio: {fileID: 8300000, guid: 54057ec9c9d7a624d84cb6c4f63b374c, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 4fbc44b3be31f7b4f8ff807b6e141750, type: 2}
+  - {fileID: 11400000, guid: ad062c0863125984d9b961c5d8cad6c0, type: 2}
   items:
   - {fileID: 11400000, guid: 6987e36d29f84234899abefa4c6738be, type: 2}
   - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}

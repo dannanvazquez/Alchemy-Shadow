@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client7.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 55ad7fd6f25dc8940a2005c9e297bd8a, type: 2}
-  _dialogueText: Here's that money I promised.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: Thanks. There's this cool wolf that has shown me how much more seriously
+    people treat you when you're tall and scary looking.
+  _dialogueAudio: {fileID: 8300000, guid: 3a228ee7d7a322d46be3958438e9cdc6, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

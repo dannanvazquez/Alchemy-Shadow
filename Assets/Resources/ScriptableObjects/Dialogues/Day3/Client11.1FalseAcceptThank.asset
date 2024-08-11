@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Client11.1FalseAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
-  _dialogueText: Here's your reward.
+  _dialogueText: Thanks a lot, I've been looking at gifts to show him how much I
+    care but I also really care about making sure I buy from ethical places. Loving
+    your community and your partner takes a certain type of energy, and that energy
+    seems to typing to loudly...
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

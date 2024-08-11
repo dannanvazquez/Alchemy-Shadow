@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Client9.1FalseAccept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
-  _dialogueText: I'm so relieved. It's so hard for me to see her sick like this.
-    I mean it's not like I actually care about her, it's just that when she's sick,
-    she's no fun... I just want .
-  _dialogueAudio: {fileID: 8300000, guid: 57327d6bd222e44419fe2fb5fbc6be26, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client9.1Accept
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 46630a7458508be47aecdaf2c6d253ec, type: 2}
+  - {fileID: 11400000, guid: c38b0bc9a29e1e04189c3f5af81d15ca, type: 2}
   items:
   - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}

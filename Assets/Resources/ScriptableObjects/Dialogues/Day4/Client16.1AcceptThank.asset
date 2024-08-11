@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client16.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 7b8abbbf94892d343bffcce2fe645d1f, type: 2}
-  _dialogueText: Here you go dear.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: Thanks a lot. I'm getting a bit worried about my health. If I'm
+    not here for my husband, who's going to be able to take care of him?
+  _dialogueAudio: {fileID: 8300000, guid: 36c543d9ecee8984c84267656c2bdae4, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

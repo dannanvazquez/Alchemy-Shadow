@@ -15,8 +15,9 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: HELLO. GIVE ME A STRONG PAIN KILLER. QUICK.
   _dialogueAudio: {fileID: 8300000, guid: 669f226adc4c6574b832ca8ab7ba35b0, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 524530473f704674faa12e7d8092fa00, type: 2}
   - {fileID: 11400000, guid: e39dd707d6cbf2944aa992d97cccf0b7, type: 2}

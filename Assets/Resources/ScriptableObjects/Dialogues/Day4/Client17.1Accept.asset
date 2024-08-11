@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Client17.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
-  _dialogueText: Thanks. Truly.
-  _dialogueAudio: {fileID: 8300000, guid: ab6fad33eb308484cbb9b08f49569a60, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: b1eff34928eb65e4fb0ee98738f81ed3, type: 2}
+  - {fileID: 11400000, guid: 68240e8efd455144d8983ae5f36fc8e5, type: 2}
   items:
   - {fileID: 11400000, guid: ae045c14c816d77449eba230318bd6f1, type: 2}
   - {fileID: 11400000, guid: f49aa7399f3588342bd4fc56ef34657f, type: 2}

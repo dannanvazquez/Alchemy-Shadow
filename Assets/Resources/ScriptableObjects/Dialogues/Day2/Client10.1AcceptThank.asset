@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client10.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
-  _dialogueText: Here you go!
+  _dialogueText: Great. I wonder just how far I could theoretically push it. I mean
+    if they were to trust just about ANYTHING.
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues: []

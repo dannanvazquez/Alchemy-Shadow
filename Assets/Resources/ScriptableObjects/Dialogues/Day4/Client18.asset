@@ -17,8 +17,9 @@ MonoBehaviour:
     I don't tell someone they have something in their teeth, but I have a feeling
     they mean a worst type of bad. Help me- I mean. Make me be real bad.
   _dialogueAudio: {fileID: 8300000, guid: 435ac68400081e34d9318e3d5003a061, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: f7bccdcfdc337ef4886d96f5a5496d88, type: 2}
   - {fileID: 11400000, guid: de8e771fafa74ad4f8d11a9385b9b6e5, type: 2}

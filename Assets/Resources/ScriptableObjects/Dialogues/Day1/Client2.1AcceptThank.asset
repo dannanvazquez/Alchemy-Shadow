@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Client2.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 7b8abbbf94892d343bffcce2fe645d1f, type: 2}
-  _dialogueText: Thank you! I'll leave the money here.
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: Oh thank you so much! I was worried you'd turn me down, I didn't
+    have it in me to wander in too many places looking for help.
+  _dialogueAudio: {fileID: 8300000, guid: a9a5a4f8b0e158844ac7a4da93be3443, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

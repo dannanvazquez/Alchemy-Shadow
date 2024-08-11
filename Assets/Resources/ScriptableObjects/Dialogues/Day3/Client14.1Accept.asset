@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: Client14.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
-  _dialogueText: 'You might think it''s for my business but actually, the craziest
-    thing happened : my wife suddenly decided I wouldn''t be allowed to invest my
-    time into hustling to get us our dream house. Instead she wants me to babysit
-    our kids at least twice a week... I need to convince her to give it up.'
+  _dialogueText: 
   _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: Client14.1Accept
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 2fdbd13b627db2746a04858294d7bdc4, type: 2}
+  - {fileID: 11400000, guid: fc0668db658d1154da2a616ea92c3eb6, type: 2}
   items:
   - {fileID: 11400000, guid: 6987e36d29f84234899abefa4c6738be, type: 2}
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}

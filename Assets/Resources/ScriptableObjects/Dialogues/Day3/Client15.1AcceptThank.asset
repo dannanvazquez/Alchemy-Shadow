@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Client15.1AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
-  _dialogueText: ...!
+  _dialogueText: ...
   _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues: []

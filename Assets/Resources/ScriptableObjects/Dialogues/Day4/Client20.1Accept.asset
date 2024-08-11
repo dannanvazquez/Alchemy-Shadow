@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: Client20.1Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 6128a3d70357db64bbebdffc04f2948a, type: 2}
-  _dialogueText: Thank you! I know we seem very different you and I, but you cannot
-    even begin to imagine the type of pressure exists for us. If you're slightly
-    less, adorable as they'd say, you're directly casted off- I mean, I guess you
-    might be able to get it.
-  _dialogueAudio: {fileID: 8300000, guid: f1f24725d34b4074f9d52acfaef6229c, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 211f3b92e5a1e784f81c97250976cd69, type: 2}
+  - {fileID: 11400000, guid: 02318c51f38a2ca4187433b23efe26aa, type: 2}
   items:
   - {fileID: 11400000, guid: 892cc589d96c1824593306015a94c1af, type: 2}
   - {fileID: 11400000, guid: 191762eca3ce37c40884e0a1232ae099, type: 2}

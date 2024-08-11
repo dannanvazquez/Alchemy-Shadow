@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Client12.1.2AcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
-  _dialogueText: THANKS AGAIN!
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: THANKS! I DON'T MIND RAISING MY VOICE FOR HER. But I am scared at
+    this rhythm, I won't be able to keep on doing it much longer. AND I CANNOT ALLOW
+    THAT.
+  _dialogueAudio: {fileID: 8300000, guid: 4c232af0c6613db4da8bc2a992c28150, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

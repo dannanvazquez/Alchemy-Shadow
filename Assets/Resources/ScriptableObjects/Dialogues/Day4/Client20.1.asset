@@ -16,8 +16,9 @@ MonoBehaviour:
   _dialogueText: Hey. Don't look at me weird, we also have needs. Listen, I need
     a potion that could make me rounder, plumper and... you know, overall cuter.
   _dialogueAudio: {fileID: 8300000, guid: 137d3b5058c720a4a9a5cc5aba15b2a1, type: 3}
-  _inputText: 
+  _inputText: Failed
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: e66c1b3f23c97884eb270f199515d2ef, type: 2}
   - {fileID: 11400000, guid: 47799ee3352c55546a572aa7ce34ade9, type: 2}

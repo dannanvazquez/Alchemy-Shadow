@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Client22.1TrueFalseRefuseAcceptThank
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
-  _dialogueText: Here you go I guess...
-  _dialogueAudio: {fileID: 0}
-  _inputText: 
+  _dialogueText: I miss hearing her laugh...
+  _dialogueAudio: {fileID: 8300000, guid: fdc6d6fd81563194bb3d67adabc15ef1, type: 3}
+  _inputText: Successful
   memoryTag: 
   giveMoney: 35
   _dialogues:

@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Client12.1.2Accept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
-  _dialogueText: THANKS! I DON'T MIND RAISING MY VOICE FOR HER. But I am scared at
-    this rhythm, I won't be able to keep on doing it much longer. AND I CANNOT ALLOW
-    THAT.
-  _dialogueAudio: {fileID: 8300000, guid: 4c232af0c6613db4da8bc2a992c28150, type: 3}
+  _dialogueText: 
+  _dialogueAudio: {fileID: 0}
   _inputText: Accept
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: a08a49807f5471145a39a7954b3a5268, type: 2}
+  - {fileID: 11400000, guid: 234a161aceba5834eb6fc6ff63c0ac8c, type: 2}
   items:
   - {fileID: 11400000, guid: a1f24098b34141043ade99d6675de91c, type: 2}
   - {fileID: 11400000, guid: e28f020ec2cdbda45b6d54608aa1ffe7, type: 2}
