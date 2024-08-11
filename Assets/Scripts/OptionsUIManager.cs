@@ -7,12 +7,14 @@ public class OptionsUIManager : MonoBehaviour {
     [Header("References")]
     [SerializeField] private AudioMixer masterMixer;
     [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider voSlider;
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Toggle fullscreenToggle;
     [SerializeField] private GameObject mainMenuButton;
 
     private void OnEnable() {
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0.5f);
+        voSlider.value = PlayerPrefs.GetFloat("voVolume", 0.5f);
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0.5f);
 
         fullscreenToggle.isOn = Screen.fullScreen;
@@ -24,16 +26,22 @@ public class OptionsUIManager : MonoBehaviour {
 
     private void OnDisable() {
         PlayerPrefs.SetFloat("musicVolume", musicSlider.value);
+        PlayerPrefs.SetFloat("voVolume", voSlider.value);
         PlayerPrefs.SetFloat("sfxVolume", sfxSlider.value);
     }
 
     private void Start() {
         SetMusicVolume(musicSlider.value);
+        SetVOVolume(voSlider.value);
         SetSFXVolume(sfxSlider.value);
     }
 
     public void SetMusicVolume(float volume) {
         masterMixer.SetFloat("musicVolume", Mathf.Log10(volume) * 20);
+    }
+
+    public void SetVOVolume(float volume) {
+        masterMixer.SetFloat("voVolume", Mathf.Log10(volume) * 20);
     }
 
     public void SetSFXVolume(float volume) {

@@ -1683,7 +1683,7 @@ AudioSource:
   m_GameObject: {fileID: 447591147}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -208356779355166811, guid: 2f6d89002aef59646b00b50ee8de686e, type: 2}
+  OutputAudioMixerGroup: {fileID: -2201428147483551464, guid: 2f6d89002aef59646b00b50ee8de686e, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -3899,6 +3899,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3625046591125886329, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625046591125886329, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625046591125886329, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625046591125886329, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625046591125886329, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625046591125886329, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3695808746916416471, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -4013,6 +4037,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3882456683383204664, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140787760072896487, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6332033308500754530, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7061677467316116173, guid: 1be216707c2750946865a9e4daca7b40, type: 3}
