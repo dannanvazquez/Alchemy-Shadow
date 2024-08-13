@@ -16,7 +16,7 @@ MonoBehaviour:
   _dialogueText: I miss hearing her laugh...
   _dialogueAudio: {fileID: 8300000, guid: fdc6d6fd81563194bb3d67adabc15ef1, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client22.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: a38861e6001689547adcbcf1de190bfc, type: 2}

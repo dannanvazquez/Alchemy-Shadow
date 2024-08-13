@@ -17,6 +17,6 @@ MonoBehaviour:
     Thank you so very much!
   _dialogueAudio: {fileID: 8300000, guid: be204301e414e6c48bc3d6e06b228675, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client5.1AcceptThank
   giveMoney: 0
   _dialogues: []

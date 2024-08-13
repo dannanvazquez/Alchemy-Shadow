@@ -15,7 +15,9 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: I've nothing to ask you to make. But I wanted to give you a little
     something to express my gratitude.
+  _dialogueAudio: {fileID: 0}
   _inputText: 
-  memoryTag: 
+  memoryTag: Client22.1AcceptThank
+  giveMoney: 25
   _dialogues:
   - {fileID: 11400000, guid: a38861e6001689547adcbcf1de190bfc, type: 2}

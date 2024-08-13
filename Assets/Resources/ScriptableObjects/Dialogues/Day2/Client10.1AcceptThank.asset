@@ -17,6 +17,6 @@ MonoBehaviour:
     if they were to trust just about ANYTHING.
   _dialogueAudio: {fileID: 0}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client10.1AcceptThank
   giveMoney: 35
   _dialogues: []

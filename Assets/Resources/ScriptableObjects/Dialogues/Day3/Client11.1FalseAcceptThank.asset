@@ -16,10 +16,10 @@ MonoBehaviour:
   _dialogueText: Thanks a lot, I've been looking at gifts to show him how much I
     care but I also really care about making sure I buy from ethical places. Loving
     your community and your partner takes a certain type of energy, and that energy
-    seems to typing to loudly...
+    seems to be typing too loudly...
   _dialogueAudio: {fileID: 0}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client11.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 6983fbd40c8655840ad7d2240ac4acc0, type: 2}

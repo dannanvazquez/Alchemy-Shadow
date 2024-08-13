@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: b14f040b6cb967043be2a907debe4127, type: 2}
   _dialogueText: ...
+  _dialogueAudio: {fileID: 0}
   _inputText: Refuse
-  memoryTag: 
+  memoryTag: Client15.1Refuse
+  giveMoney: 0
   _dialogues: []

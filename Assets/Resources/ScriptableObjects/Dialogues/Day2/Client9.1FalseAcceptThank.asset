@@ -18,7 +18,7 @@ MonoBehaviour:
     she's no fun... I just want .
   _dialogueAudio: {fileID: 8300000, guid: 57327d6bd222e44419fe2fb5fbc6be26, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client9.1AcceptThank
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: c38b0bc9a29e1e04189c3f5af81d15ca, type: 2}

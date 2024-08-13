@@ -200,9 +200,11 @@ public class GameManager : MonoBehaviour {
         moneyChangeUIGO.GetComponent<MoneyChangeUIController>().MoneyUp(addedMoney);
     }
 
-    public bool IsEnoughMoney(int amount) { return amount >= money; }
+    public bool IsEnoughMoney(int requirementAmount) { return money >= requirementAmount; }
 
     public int RemainingMoneyOwed() { return moneyOwed - money; }
+
+    public void GiveRemainingMoney() { ChangeMoney(moneyOwed - money); }
 
     public void ChangeMoney(int moneyAmount) {
         if (moneyAmount == 0) return;

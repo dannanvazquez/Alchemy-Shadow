@@ -17,7 +17,7 @@ MonoBehaviour:
     but then I realise it's just laziness talking and I should stop being pathetic.
   _dialogueAudio: {fileID: 8300000, guid: c81921541d9e7f047b067e9a735fe088, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client18.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: adbdc645e791cfb4c89df266be2d61ab, type: 2}

@@ -20,7 +20,7 @@ MonoBehaviour:
     him, I really do.
   _dialogueAudio: {fileID: 8300000, guid: 09c3e2e427ea4544dbfe48659e4b8ebe, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client11.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 6983fbd40c8655840ad7d2240ac4acc0, type: 2}

@@ -18,7 +18,7 @@ MonoBehaviour:
     me, and stuff...
   _dialogueAudio: {fileID: 0}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client21.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 357a62484a2796c479b9a200b2192244, type: 2}

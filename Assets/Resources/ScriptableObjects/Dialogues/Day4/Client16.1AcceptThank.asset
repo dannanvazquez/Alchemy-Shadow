@@ -17,7 +17,7 @@ MonoBehaviour:
     not here for my husband, who's going to be able to take care of him?
   _dialogueAudio: {fileID: 8300000, guid: 36c543d9ecee8984c84267656c2bdae4, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client16.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: d2945b752caf4ec4e8c78bc7b5644bbd, type: 2}

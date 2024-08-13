@@ -17,7 +17,7 @@ MonoBehaviour:
     have it in me to wander in too many places looking for help.
   _dialogueAudio: {fileID: 8300000, guid: a9a5a4f8b0e158844ac7a4da93be3443, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client2.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 882bdacc5884274449792af1210d2f42, type: 2}

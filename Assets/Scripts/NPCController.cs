@@ -78,7 +78,14 @@ public class NPCController : MonoBehaviour {
 
         // Check if the dialogue is a conditional.
         if (currentDialogueSO.IsConditionalTag()) {
-            if (memoryTags.Contains((currentDialogueSO as ConditionalTagDialogueSO).conditionalTag)) {
+            if ((currentDialogueSO as ConditionalTagDialogueSO).MeetsRequirements(memoryTags)) {
+                SelectNextDialogue("True");
+            } else {
+                SelectNextDialogue("False");
+            }
+            yield break;
+        } else if (currentDialogueSO.IsConditionalMultiTag()) {
+            if ((currentDialogueSO as ConditionalMultiTagDialogueSO).MeetsRequirements(memoryTags)) {
                 SelectNextDialogue("True");
             } else {
                 SelectNextDialogue("False");
@@ -140,10 +147,13 @@ public class NPCController : MonoBehaviour {
     }
 
     public void SelectNextDialogue(string choice = "") {
-        currentDialogueSO = currentDialogueSO.GetNextDialogue(choice);
-
         npcAudioSource.Stop();
         GameManager.Instance.ChangeMoney(currentDialogueSO.GetMoneyAmount());
+        if (currentDialogueSO.IsGivingRemainingMoney()) {
+            GameManager.Instance.GiveRemainingMoney();
+        }
+
+        currentDialogueSO = currentDialogueSO.GetNextDialogue(choice);
 
         if (currentDialogueSO != null) {
             StartCoroutine(InitializeDialogueCoroutine());

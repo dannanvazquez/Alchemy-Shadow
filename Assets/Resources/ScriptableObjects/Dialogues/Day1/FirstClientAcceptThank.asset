@@ -19,7 +19,7 @@ MonoBehaviour:
     grasp it, you know?
   _dialogueAudio: {fileID: 8300000, guid: 8411d33f19785c941aba6e279571ed2c, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: FirstClientAcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 0bd5c48ef66e241478e95a7d6ab76d3e, type: 2}

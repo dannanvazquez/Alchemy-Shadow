@@ -16,7 +16,9 @@ MonoBehaviour:
   _dialogueText: Really? Oh come on! It wasn't even for my business, it was to convince
     my wife to give up the idea of making me stay home twice a week to babysit the
     kids! Nobody gets the real work I'm trying to do!
+  _dialogueAudio: {fileID: 0}
   _inputText: Refuse
-  memoryTag: 
+  memoryTag: Client14.1Refuse
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: fc0668db658d1154da2a616ea92c3eb6, type: 2}

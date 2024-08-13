@@ -17,7 +17,7 @@ MonoBehaviour:
     her pain and make it mine, I would too.
   _dialogueAudio: {fileID: 8300000, guid: b6fd139b726fb384a8dd13264dc1aabe, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client19.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: f75d59ade1bde354eba78cc88e196f97, type: 2}

@@ -17,7 +17,7 @@ MonoBehaviour:
     people treat you when you're tall and scary looking.
   _dialogueAudio: {fileID: 8300000, guid: 3a228ee7d7a322d46be3958438e9cdc6, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client7.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 4e9cd3785a4f289489306ceb7606ccf6, type: 2}

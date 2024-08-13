@@ -17,7 +17,7 @@ MonoBehaviour:
     the the opportunity to show you. I really appreciate what you're doing.
   _dialogueAudio: {fileID: 8300000, guid: a33be02695979954eb9373dca8d857e7, type: 3}
   _inputText: Successful
-  memoryTag: 
+  memoryTag: Client9.1AcceptThank
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: c38b0bc9a29e1e04189c3f5af81d15ca, type: 2}

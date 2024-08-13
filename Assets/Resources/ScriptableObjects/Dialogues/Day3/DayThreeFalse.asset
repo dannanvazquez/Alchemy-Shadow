@@ -15,10 +15,11 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
   _dialogueText: My partner, Herto, seems to have trouble sleeping. I think I might
     be a bit too loud. Do you have a very gentle mixture that would help him sleep
-    through my typing.
+    through my typing?
   _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 11c5c75f17472684fbe6fa7afa597dde, type: 2}
   - {fileID: 11400000, guid: 06d18c6e0b21d6f4994d9a41cb91ddeb, type: 2}

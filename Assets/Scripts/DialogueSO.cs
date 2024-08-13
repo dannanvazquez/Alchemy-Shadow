@@ -25,7 +25,9 @@ public class DialogueSO : ScriptableObject {
 
     public virtual bool DoesInitiateCrafting() { return false; }
     public virtual bool IsConditionalTag() { return false; }
+    public virtual bool IsConditionalMultiTag() { return false; }
     public virtual bool IsConditionalMoney() { return false; }
+    public virtual bool IsGivingRemainingMoney() { return false; }
 
     public bool HasManyPaths() { return _dialogues.Length > 1; }
 

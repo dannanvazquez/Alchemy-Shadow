@@ -18,6 +18,7 @@ MonoBehaviour:
     compromise after all! I'm compromising my morals so we can stay together.
   _dialogueAudio: {fileID: 8300000, guid: 99f52020280c38047bc4ae4d373f4477, type: 3}
   _inputText: Refuse
-  memoryTag: 
+  memoryTag: Client6.1Refuse
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 5c2ec074cf4098144b1ac7309fa429cd, type: 2}
