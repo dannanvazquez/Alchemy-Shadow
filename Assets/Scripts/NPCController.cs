@@ -10,6 +10,8 @@ public class NPCController : MonoBehaviour {
     [SerializeField] private SpriteRenderer npcSprite;
     [SerializeField] private AudioSource npcAudioSource;
 
+    [SerializeField] private AudioSource bellAudioSource;
+
     [SerializeField] private SpriteRenderer speechSprite;
     [SerializeField] private Canvas speechCanvas;
     [SerializeField] private TMP_Text speechText;
@@ -108,7 +110,7 @@ public class NPCController : MonoBehaviour {
 
         // Initial dialogue
         NPCSO npcSO = currentDialogueSO.GetNPC();
-        yield return StartCoroutine(SwitchNpcSpriteCoroutine(npcSO));
+        yield return StartCoroutine(SwitchNpcSpriteCoroutine(npcSO, currentDialogueSO.RingsBell()));
 
         speechText.text = $"{npcSO.npcName}: {currentDialogueSO.GetDialogueText()}";
         if (speechText.text.Contains("[moneyLeft]")) {
@@ -162,7 +164,7 @@ public class NPCController : MonoBehaviour {
         }
     }
 
-    private IEnumerator SwitchNpcSpriteCoroutine(NPCSO npcSO) {
+    private IEnumerator SwitchNpcSpriteCoroutine(NPCSO npcSO, bool ringBell) {
         if (previousNPC == null) {
             npcSprite.sprite = npcSO.npcSprite;
 
@@ -174,6 +176,7 @@ public class NPCController : MonoBehaviour {
                 yield return StartCoroutine(ToggleFadeNPCCoroutine(false));
 
                 npcSprite.sprite = npcSO.npcSprite;
+                if (ringBell) bellAudioSource.Play();
 
                 yield return StartCoroutine(ToggleFadeNPCCoroutine(true));
             }

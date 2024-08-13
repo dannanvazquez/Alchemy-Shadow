@@ -20,6 +20,8 @@ MonoBehaviour:
   _dialogueAudio: {fileID: 8300000, guid: a0d3f05d312dd064c85afb6a56eeec72, type: 3}
   _inputText: 
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: c9365c35d4f5f764db81f4f6a1d29863, type: 2}
   - {fileID: 11400000, guid: b55cdfee4ecf4594c83abd757c8bce67, type: 2}
+  _ringsBell: 1

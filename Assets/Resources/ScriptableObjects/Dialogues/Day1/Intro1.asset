@@ -20,3 +20,4 @@ MonoBehaviour:
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 4201516ce3d01d0489ab53be2bd8d33d, type: 2}
+  _ringsBell: 1

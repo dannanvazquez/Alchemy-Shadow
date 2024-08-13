@@ -16,8 +16,11 @@ MonoBehaviour:
   _dialogueText: Hey, hey, hey! Thanks to your little mixture, I got loads of people
     that signed up to my course! Which means I have more money to invest to get a
     bit more of that sweet "I trust you" juice. Can you make me more?
+  _dialogueAudio: {fileID: 0}
   _inputText: True
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: ba9b6187a69e5c2499849e1c9d653da8, type: 2}
   - {fileID: 11400000, guid: b75b2ff101994354aa20863cd93d10f2, type: 2}
+  _ringsBell: 1

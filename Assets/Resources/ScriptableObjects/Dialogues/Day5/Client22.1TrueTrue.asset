@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: YOU! YOU ABSOLUTE MORON. DID YOU SELL SOMETHING TO BRUCE?!.
+  _dialogueAudio: {fileID: 0}
   _inputText: True
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: bd07c7190368f8a46a15c50bc658e018, type: 2}
   - {fileID: 11400000, guid: e740e43025ddcf341a07947420c2ea77, type: 2}
+  _ringsBell: 1

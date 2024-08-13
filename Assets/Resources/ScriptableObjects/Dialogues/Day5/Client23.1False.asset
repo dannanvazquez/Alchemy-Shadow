@@ -15,8 +15,11 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 057c69be2422f654e863fd6dc16ef410, type: 2}
   _dialogueText: Hello. Do you have a "I swear on anything that is holy I want to
     divorce but for the kids I'm willing to try one more time" potion?
+  _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 09fa7d33a43c03745b0a73469129f83f, type: 2}
   - {fileID: 11400000, guid: b99324dd7e9bf6148851871e987c7b95, type: 2}
+  _ringsBell: 1

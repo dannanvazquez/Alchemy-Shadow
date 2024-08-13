@@ -1,3 +1,4 @@
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 // TODO: Make a clean BaseDialogueSO that all dialogue will derive from. For example, most of these variables aren't needed in ConditionalDialogueSO.
@@ -10,6 +11,7 @@ public class DialogueSO : ScriptableObject {
     [SerializeField] private string memoryTag;
     [SerializeField] private int giveMoney;
     [SerializeField] private DialogueSO[] _dialogues;
+    [SerializeField] private bool _ringsBell;
 
     public NPCSO GetNPC() { return _npcSO; }
 
@@ -28,6 +30,8 @@ public class DialogueSO : ScriptableObject {
     public virtual bool IsConditionalMultiTag() { return false; }
     public virtual bool IsConditionalMoney() { return false; }
     public virtual bool IsGivingRemainingMoney() { return false; }
+
+    public bool RingsBell() { return  _ringsBell; }
 
     public bool HasManyPaths() { return _dialogues.Length > 1; }
 

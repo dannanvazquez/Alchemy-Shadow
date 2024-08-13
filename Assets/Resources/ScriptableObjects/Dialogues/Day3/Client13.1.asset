@@ -22,3 +22,4 @@ MonoBehaviour:
   _dialogues:
   - {fileID: 11400000, guid: d320b35e5923edf4784757ba595d4819, type: 2}
   - {fileID: 11400000, guid: 48102ef2424b8054aa80324cdf4f00c8, type: 2}
+  _ringsBell: 1
