@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fb9a5d0052d76e4ba2bb3e43190fea5, type: 3}
   m_Name: EndingSomehowSuccess3
   m_EditorClassIdentifier: 
-  _npcSO: {fileID: 0}
-  _dialogueText: 
+  _npcSO: {fileID: 11400000, guid: 0c045d1900a80414c9b86937e1030d83, type: 2}
+  _dialogueText: There you go.
   _dialogueAudio: {fileID: 0}
   _inputText: 
   memoryTag: 
   giveMoney: 0
-  _dialogues: []
+  _dialogues:
+  - {fileID: 11400000, guid: 20b5ad17fa7fe5846ac406a613a38593, type: 2}

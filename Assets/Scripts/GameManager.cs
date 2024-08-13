@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
 
     [SerializeField] private PauseManager pauseManager;
     [SerializeField] private RecapUIController recapUIController;
+    [SerializeField] private EndRecapUIController endRecapUIController;
 
     [SerializeField] private DialogueSO[] startingDialogueDays;
 
@@ -93,11 +94,11 @@ public class GameManager : MonoBehaviour {
 
     public void EnableRecap() {
         if (day == startingDialogueDays.Length) {
-            recapUIController.EnableMainMenuButton();
+            endRecapUIController.EnableCanvas(money >= moneyOwed);
+        } else {
+            string[] stats = { clientsServedStat.ToString(), (5 - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString(), Mathf.Max(RemainingMoneyOwed(), 0).ToString() };
+            recapUIController.EnableCanvas(day, stats);
         }
-
-        string[] stats = { clientsServedStat.ToString(), (5 - clientsServedStat).ToString(), moneySpentStat.ToString(), moneyEarnedStat.ToString(), Mathf.Max(RemainingMoneyOwed(), 0).ToString() };
-        recapUIController.EnableCanvas(day, stats);
     }
 
     private IEnumerator SpawnNPCCoroutine() {

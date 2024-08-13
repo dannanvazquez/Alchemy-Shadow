@@ -1,12 +1,9 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Canvas))]
 public class RecapUIController : MonoBehaviour {
     [Header("References")]
-    [SerializeField] private GameObject nextDayButton;
-    [SerializeField] private GameObject mainMenuButton;
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private TMP_Text[] infoTexts;
 
@@ -28,18 +25,9 @@ public class RecapUIController : MonoBehaviour {
         canvas.enabled = true;
     }
 
-    public void EnableMainMenuButton() {
-        nextDayButton.SetActive(false);
-        mainMenuButton.SetActive(true);
-    }
-
     public void NextDay() {
         canvas.enabled = false;
 
         GameManager.Instance.NextDay();
-    }
-
-    public void MainMenu() {
-        SceneManager.LoadScene(0);
     }
 }
