@@ -38,14 +38,8 @@ public class NPCController : MonoBehaviour {
         npcSprite.color = new Color(npcSprite.color.r, npcSprite.color.g, npcSprite.color.b, 0);
         npcSprite.enabled = true;
 
+        bellAudioSource.Play();
         StartCoroutine(InitializeDialogueCoroutine());
-    }
-
-    private void EnableChoiceUI() {
-        speechCanvas.enabled = false;
-        speechSprite.enabled = false;
-
-        choiceCanvas.enabled = true;
     }
 
     private void EnableSpeechUI() {

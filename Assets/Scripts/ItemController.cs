@@ -9,6 +9,8 @@ public class ItemController : MonoBehaviour {
     private bool _isSelected = false;
 
     void OnMouseEnter() {
+        if (!GameManager.Instance.isSelectingItems) return;
+
         ItemHoverUIController.Instance.EnableUI(itemSO);
         itemGlowSprite.enabled = true;
         hoverAudio.Play();
