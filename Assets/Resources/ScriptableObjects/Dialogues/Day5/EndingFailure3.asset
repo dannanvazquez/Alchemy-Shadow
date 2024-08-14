@@ -16,6 +16,9 @@ MonoBehaviour:
   _dialogueText: You and your knick knacks are coming with us. We'll take ownership
     of your skills until you've proven useful enough to pay back your debt. What
     are you doing?
+  _dialogueAudio: {fileID: 8300000, guid: 05db8acb476d5f0438594b8007c7a6e2, type: 3}
   _inputText: 
   memoryTag: 
+  giveMoney: 0
   _dialogues: []
+  _ringsBell: 0

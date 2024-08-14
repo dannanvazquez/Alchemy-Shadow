@@ -17,7 +17,10 @@ MonoBehaviour:
     too nervous to be honest with me is one thing, but how dare you profit off of
     people's like this. With all these businesses it's always profit over anything
     else! Unbelievable!
+  _dialogueAudio: {fileID: 8300000, guid: 6941c0b4ed8167c47a64c7b65dbd5e8d, type: 3}
   _inputText: True
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 51dc58dc18fa4f34cbe4cb4801431a8e, type: 2}
+  _ringsBell: 0

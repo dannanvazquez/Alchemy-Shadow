@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: Please. Marmie. Please bring Marmie back.
+  _dialogueAudio: {fileID: 8300000, guid: 166287b508c16ef489b57367a5c1b8a7, type: 3}
   _inputText: Refuse
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: c4b02c521db1def4db00c9b6b53643b0, type: 2}
   - {fileID: 11400000, guid: a38861e6001689547adcbcf1de190bfc, type: 2}
+  _ringsBell: 0

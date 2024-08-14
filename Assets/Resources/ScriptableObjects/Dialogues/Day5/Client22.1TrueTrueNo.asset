@@ -16,10 +16,11 @@ MonoBehaviour:
   _dialogueText: I KNOW THAT YOU'RE LYING YOU PIECE OF... I WISH I HAD TIME TO STRANGLE
     YOU. BUT MAKE ME SOMETHING THAT REVERSE WHATEVER DISGUSTING THING YOU BREWED
     TO HURT HER. AND QUICK. AND DON'T EXPECT ME TO PAY YOU FOR THAT.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: 018014955bf6578428f1dc913cb6714c, type: 3}
   _inputText: No
   memoryTag: 
   giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 69ea9ffb8bcbe15468c2652682640891, type: 2}
   - {fileID: 11400000, guid: 7f08cf64cd3e2c94db83ffb1b47a5876, type: 2}
+  _ringsBell: 0

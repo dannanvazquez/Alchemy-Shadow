@@ -15,8 +15,11 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 64eeca7ca923ca9429d2404c2f236348, type: 2}
   _dialogueText: ARE YOU OUT OF YOUR MIND?! IS IT ALL ABOUT THE MONEY FOR YOU?! OKAY
     I'LL PAY YOU.
+  _dialogueAudio: {fileID: 8300000, guid: 7cf17d305f55d694d848f0748743eddb, type: 3}
   _inputText: Refuse
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: c4b02c521db1def4db00c9b6b53643b0, type: 2}
   - {fileID: 11400000, guid: f53238279bee4ca408dced13503f319e, type: 2}
+  _ringsBell: 0

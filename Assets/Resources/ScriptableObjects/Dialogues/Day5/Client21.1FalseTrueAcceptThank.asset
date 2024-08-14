@@ -15,9 +15,10 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 940848d72f999e94cba24190a0dff7de, type: 2}
   _dialogueText: I'm so incredibly resentful, but I'll keep my anger down for now.
     This better help fix things. I would be ashamed if I was you.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: 0ae1a1c691a331a49b1d729ecde4927a, type: 3}
   _inputText: Successful
   memoryTag: Client21.1AcceptThank
   giveMoney: 10
   _dialogues:
   - {fileID: 11400000, guid: 357a62484a2796c479b9a200b2192244, type: 2}
+  _ringsBell: 0

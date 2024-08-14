@@ -16,7 +16,10 @@ MonoBehaviour:
   _dialogueText: I mean. It's not like I had any expectations of you actually making
     it. Your type of business is entirely built on people's misery. And no, it's
     not ironic that we're saying that...
+  _dialogueAudio: {fileID: 0}
   _inputText: False
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: 4ed348df6538f2a43ba5827b277115eb, type: 2}
+  _ringsBell: 0

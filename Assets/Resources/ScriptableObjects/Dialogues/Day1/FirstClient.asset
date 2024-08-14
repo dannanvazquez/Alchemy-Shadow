@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: FirstClient
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: a0f5f744476edaa4d81eec3417466575, type: 2}
-  _dialogueText: Are you going to be holding the line for long? Some people are in
-    a hurry!
+  _dialogueText: Are you going to be holding the line for long? Some people are actually
+    in a hurry!
   _dialogueAudio: {fileID: 8300000, guid: a864189e9ad3df345b768ccbcfcffe60, type: 3}
   _inputText: 
   memoryTag: 

@@ -15,7 +15,10 @@ MonoBehaviour:
   _npcSO: {fileID: 11400000, guid: 057c69be2422f654e863fd6dc16ef410, type: 2}
   _dialogueText: Great. I've tried. I've tried it all. Don't you DARE, tell me that
     I didn't try Rogie.
+  _dialogueAudio: {fileID: 8300000, guid: e601d71abc47463448cde8a47386434d, type: 3}
   _inputText: Refuse
   memoryTag: 
+  giveMoney: 0
   _dialogues:
   - {fileID: 11400000, guid: b7d451497f97a5d4188a62055f3c1a9d, type: 2}
+  _ringsBell: 0

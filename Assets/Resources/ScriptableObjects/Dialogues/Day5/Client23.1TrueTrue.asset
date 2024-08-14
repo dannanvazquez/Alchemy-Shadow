@@ -17,7 +17,7 @@ MonoBehaviour:
     his money on! I've been nice, caring, encouraging and he STILL went behind my
     back and use our children's money to spend on his STUPID BUSINESS! I want our
     money back.
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: 7f4837645bdd99c4b9e12969194b0e48, type: 3}
   _inputText: True
   memoryTag: 
   giveMoney: 0

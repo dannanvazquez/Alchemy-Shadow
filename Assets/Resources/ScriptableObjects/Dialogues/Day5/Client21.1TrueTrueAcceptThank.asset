@@ -16,9 +16,10 @@ MonoBehaviour:
   _dialogueText: It's funny, for an unlucky woman, she's the luckiest thing that
     happened to me. HUM. I mean because it, like, gets me out of the house, and entertains
     me, and stuff...
-  _dialogueAudio: {fileID: 0}
+  _dialogueAudio: {fileID: 8300000, guid: d7b9309fa182a8b479a86bbcaba9efe8, type: 3}
   _inputText: Successful
   memoryTag: Client21.1AcceptThank
   giveMoney: 35
   _dialogues:
   - {fileID: 11400000, guid: 357a62484a2796c479b9a200b2192244, type: 2}
+  _ringsBell: 0

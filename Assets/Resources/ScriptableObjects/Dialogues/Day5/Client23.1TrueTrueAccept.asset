@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Client23.1TrueTrueAccept
   m_EditorClassIdentifier: 
   _npcSO: {fileID: 11400000, guid: e13dda6533f23dd4b9b739735d7ca8d2, type: 2}
-  _dialogueText: Client23.1TrueTrueAccept
-  _dialogueAudio: {fileID: 0}
+  _dialogueText: He thought, if people around him thought he was rich and successfull,
+    then he could actually become that by selling silly courses on how to be like
+    him. His grand idea is to fake it until you make it. THE WHOLE POINT ABOUT FAKING
+    IT IS TO NOT SPEND HUGE AMOUNT OF MONEY IN THE FIRST PLACE, NO?
+  _dialogueAudio: {fileID: 8300000, guid: bef20264e4d39374fbf985d333ee6aaa, type: 3}
   _inputText: Accept
   memoryTag: Client23.1
   giveMoney: -35
   _dialogues:
   - {fileID: 11400000, guid: b7d451497f97a5d4188a62055f3c1a9d, type: 2}
+  _ringsBell: 0
